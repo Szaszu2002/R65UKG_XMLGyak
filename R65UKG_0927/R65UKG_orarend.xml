@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf=8"?>
+
+<R65UKG_orarend>
+	<ora id="01" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Idegen nyelv 1.</kurzus_név>
+		<oktató>Vitányiné Varga Erika Ilona</oktató>
+		<időpont>
+			<kezdet>12</kezdet>
+			<vég>14</vég>
+			<nap>Hétfő</nap>
+		</időpont>
+		<helyszín>A/5 202</helyszín>
+	</ora>
+</R65UKG_orarend>
+
+<R65UKG_orarend>
+	<ora id="02" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>WEB technológiák</kurzus_név>
+		<oktató>Agárdi Anita</oktató>
+		<időpont>
+			<kezdet>14</kezdet>
+			<vég>16</vég>
+			<nap>Hétfő</nap>
+		</időpont>
+		<helyszín>30-as előadó</helyszín>
+	</ora>
+</R65UKG_orarend>
+
+<R65UKG_orarend>
+	<ora id="03" tipus="gyakorlat">
+		<szak>BP</szak>
+		<kurzus_név>WEB technológiák</kurzus_név>
+		<oktató>Agárdi Anita</oktató>
+		<időpont>
+			<kezdet>16</kezdet>
+			<vég>18</vég>
+			<nap>Hétfő</nap>
+		</időpont>
+		<helyszín>Inf/202</helyszín>
+	</ora>
+</R65UKG_orarend>
+
+<R65UKG_orarend>
+	<ora id="04" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Mesterséges intelligencia</kurzus_név>
+		<oktató>Fazekas Levente</oktató>
+		<időpont>
+			<kezdet>10</kezdet>
+			<vég>12</vég>
+			<nap>Kedd</nap>
+		</időpont>
+		<helyszín>32-es előadó</helyszín>
+	</ora>
+</R65UKG_orarend>
+
+<R65UKG_orarend>
+	<ora id="05" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Adatkezelés XML-ben</kurzus_név>
+		<oktató>Bednarik László</oktató>
+		<időpont>
+			<kezdet>12</kezdet>
+			<vég>14</vég>
+			<nap>Kedd</nap>
+		</időpont>
+		<helyszín>32-es előadó</helyszín>
+	</ora>
+</R65UKG_orarend>
+
+<R65UKG_orarend>
+	<ora id="06" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Algoritmusok és vizsgálatuk</kurzus_név>
+		<oktató>Házy Attila</oktató>
+		<időpont>
+			<kezdet>14</kezdet>
+			<vég>16</vég>
+			<nap>Kedd</nap>
+		</időpont>
+		<helyszín>A/1 320</helyszín>
+	</ora>
+</R65UKG_orarend>
+
+<R65UKG_orarend>
+	<ora id="06" tipus="gyakorlat">
+		<szak>BP</szak>
+		<kurzus_név>Algoritmusok és vizsgálatuk</kurzus_név>
+		<oktató>Házy Attila</oktató>
+		<időpont>
+			<kezdet>16</kezdet>
+			<vég>18</vég>
+			<nap>Kedd</nap>
+		</időpont>
+		<helyszín>A/1 320</helyszín>
+	</ora>
+</R65UKG_orarend>
+
+<R65UKG_orarend>
+	<ora id="06" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Számitógépi hálózatok</kurzus_név>
+		<oktató>Kovács Szilveszter</oktató>
+		<időpont>
+			<kezdet>8</kezdet>
+			<vég>10</vég>
+			<nap>Szerda</nap>
+		</időpont>
+		<helyszín>2-es előadó</helyszín>
+	</ora>
+</R65UKG_orarend>
