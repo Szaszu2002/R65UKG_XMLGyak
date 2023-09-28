@@ -85,7 +85,7 @@
 </R65UKG_orarend>
 
 <R65UKG_orarend>
-	<ora id="06" tipus="gyakorlat">
+	<ora id="07" tipus="gyakorlat">
 		<szak>BP</szak>
 		<kurzus_név>Algoritmusok és vizsgálatuk</kurzus_név>
 		<oktató>Házy Attila</oktató>
@@ -99,7 +99,7 @@
 </R65UKG_orarend>
 
 <R65UKG_orarend>
-	<ora id="06" tipus="elmélet">
+	<ora id="08" tipus="elmélet">
 		<szak>BP</szak>
 		<kurzus_név>Számitógépi hálózatok</kurzus_név>
 		<oktató>Kovács Szilveszter</oktató>
@@ -109,5 +109,89 @@
 			<nap>Szerda</nap>
 		</időpont>
 		<helyszín>2-es előadó</helyszín>
+	</ora>
+</R65UKG_orarend>
+
+<R65UKG_orarend>
+	<ora id="09" tipus="gyakorlat">
+		<szak>BP</szak>
+		<kurzus_név>Adatkezelés XML-ben</kurzus_név>
+		<oktató>Bednarik László</oktató>
+		<időpont>
+			<kezdet>12</kezdet>
+			<vég>14</vég>
+			<nap>Szerda</nap>
+		</időpont>
+		<helyszín>Inf/103</helyszín>
+	</ora>
+</R65UKG_orarend>
+
+<R65UKG_orarend>
+	<ora id="10" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Vállalati információs rendszerek</kurzus_név>
+		<oktató>Sasvári Péter</oktató>
+		<időpont>
+			<kezdet>14</kezdet>
+			<vég>16</vég>
+			<nap>Szerda</nap>
+		</időpont>
+		<helyszín>Inf/101</helyszín>
+	</ora>
+</R65UKG_orarend>
+
+<R65UKG_orarend>
+	<ora id="11" tipus="gyakorlat">
+		<szak>BP</szak>
+		<kurzus_név>Vállalati információs rendszerek</kurzus_név>
+		<oktató>Sasvári Péter</oktató>
+		<időpont>
+			<kezdet>18</kezdet>
+			<vég>20</vég>
+			<nap>Szerda</nap>
+		</időpont>
+		<helyszín>Inf/101</helyszín>
+	</ora>
+</R65UKG_orarend>
+
+<R65UKG_orarend>
+	<ora id="12" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Mesterséges intelligencia</kurzus_név>
+		<oktató>Fazekas Levente</oktató>
+		<időpont>
+			<kezdet>10</kezdet>
+			<vég>12</vég>
+			<nap>Csütörtök</nap>
+		</időpont>
+		<helyszín>1-es előadó</helyszín>
+	</ora>
+</R65UKG_orarend>
+
+<R65UKG_orarend>
+	<ora id="13" tipus="gyakorlat">
+		<szak>BP</szak>
+		<kurzus_név>Számitógépi hálózatok</kurzus_név>
+		<oktató>Kovács Szilveszter</oktató>
+		<időpont>
+			<kezdet>12</kezdet>
+			<vég>14</vég>
+			<nap>Csütörtök</nap>
+		</időpont>
+		<helyszín>3-as előadó</helyszín>
+	</ora>
+</R65UKG_orarend>
+
+<R65UKG_orarend>
+	<ora id="14" tipus="gyakorlat">
+		<szak>BP</szak>
+		<kurzus_név>Játék prototípusok</kurzus_név>
+		<oktató>Kiss Áron</oktató>
+		<időpont>
+			<kezdet>16</kezdet>
+			<vég>20</vég>
+			<nap>Csütörtök</nap>
+		</időpont>
+		<helyszín>Inf/15</helyszín>
 	</ora>
 </R65UKG_orarend>
