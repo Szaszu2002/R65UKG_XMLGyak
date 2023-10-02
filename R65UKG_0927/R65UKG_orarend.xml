@@ -12,9 +12,7 @@
 		</időpont>
 		<helyszín>A/5 202</helyszín>
 	</ora>
-</R65UKG_orarend>
 
-<R65UKG_orarend>
 	<ora id="02" tipus="elmélet">
 		<szak>BP</szak>
 		<kurzus_név>WEB technológiák</kurzus_név>
@@ -26,9 +24,7 @@
 		</időpont>
 		<helyszín>30-as előadó</helyszín>
 	</ora>
-</R65UKG_orarend>
 
-<R65UKG_orarend>
 	<ora id="03" tipus="gyakorlat">
 		<szak>BP</szak>
 		<kurzus_név>WEB technológiák</kurzus_név>
@@ -40,9 +36,7 @@
 		</időpont>
 		<helyszín>Inf/202</helyszín>
 	</ora>
-</R65UKG_orarend>
 
-<R65UKG_orarend>
 	<ora id="04" tipus="elmélet">
 		<szak>BP</szak>
 		<kurzus_név>Mesterséges intelligencia</kurzus_név>
@@ -54,9 +48,7 @@
 		</időpont>
 		<helyszín>32-es előadó</helyszín>
 	</ora>
-</R65UKG_orarend>
 
-<R65UKG_orarend>
 	<ora id="05" tipus="elmélet">
 		<szak>BP</szak>
 		<kurzus_név>Adatkezelés XML-ben</kurzus_név>
@@ -68,9 +60,7 @@
 		</időpont>
 		<helyszín>32-es előadó</helyszín>
 	</ora>
-</R65UKG_orarend>
 
-<R65UKG_orarend>
 	<ora id="06" tipus="elmélet">
 		<szak>BP</szak>
 		<kurzus_név>Algoritmusok és vizsgálatuk</kurzus_név>
@@ -82,9 +72,7 @@
 		</időpont>
 		<helyszín>A/1 320</helyszín>
 	</ora>
-</R65UKG_orarend>
 
-<R65UKG_orarend>
 	<ora id="07" tipus="gyakorlat">
 		<szak>BP</szak>
 		<kurzus_név>Algoritmusok és vizsgálatuk</kurzus_név>
@@ -96,9 +84,7 @@
 		</időpont>
 		<helyszín>A/1 320</helyszín>
 	</ora>
-</R65UKG_orarend>
 
-<R65UKG_orarend>
 	<ora id="08" tipus="elmélet">
 		<szak>BP</szak>
 		<kurzus_név>Számitógépi hálózatok</kurzus_név>
@@ -110,9 +96,7 @@
 		</időpont>
 		<helyszín>2-es előadó</helyszín>
 	</ora>
-</R65UKG_orarend>
 
-<R65UKG_orarend>
 	<ora id="09" tipus="gyakorlat">
 		<szak>BP</szak>
 		<kurzus_név>Adatkezelés XML-ben</kurzus_név>
@@ -124,9 +108,7 @@
 		</időpont>
 		<helyszín>Inf/103</helyszín>
 	</ora>
-</R65UKG_orarend>
 
-<R65UKG_orarend>
 	<ora id="10" tipus="elmélet">
 		<szak>BP</szak>
 		<kurzus_név>Vállalati információs rendszerek</kurzus_név>
@@ -138,9 +120,7 @@
 		</időpont>
 		<helyszín>Inf/101</helyszín>
 	</ora>
-</R65UKG_orarend>
 
-<R65UKG_orarend>
 	<ora id="11" tipus="gyakorlat">
 		<szak>BP</szak>
 		<kurzus_név>Vállalati információs rendszerek</kurzus_név>
@@ -152,9 +132,7 @@
 		</időpont>
 		<helyszín>Inf/101</helyszín>
 	</ora>
-</R65UKG_orarend>
 
-<R65UKG_orarend>
 	<ora id="12" tipus="elmélet">
 		<szak>BP</szak>
 		<kurzus_név>Mesterséges intelligencia</kurzus_név>
@@ -166,9 +144,7 @@
 		</időpont>
 		<helyszín>1-es előadó</helyszín>
 	</ora>
-</R65UKG_orarend>
 
-<R65UKG_orarend>
 	<ora id="13" tipus="gyakorlat">
 		<szak>BP</szak>
 		<kurzus_név>Számitógépi hálózatok</kurzus_név>
@@ -180,9 +156,7 @@
 		</időpont>
 		<helyszín>3-as előadó</helyszín>
 	</ora>
-</R65UKG_orarend>
 
-<R65UKG_orarend>
 	<ora id="14" tipus="gyakorlat">
 		<szak>BP</szak>
 		<kurzus_név>Játék prototípusok</kurzus_név>
