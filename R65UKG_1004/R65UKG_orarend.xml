@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf=8"?>
+
+<!--<DOCTYPE orarend SYSTEM "R65UKG_orarend.dtd"-->
+
+
+
+<R65UKG_orarend xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="R65UKG_orarend.xsd">
+	<ora id="01" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Idegen nyelv 1.</kurzus_név>
+		<oktató>Vitányiné Varga Erika Ilona</oktató>
+		<időpont>
+			<kezdet>12</kezdet>
+			<vég>14</vég>
+			<nap>Hétfő</nap>
+		</időpont>
+		<helyszín>A/5 202</helyszín>
+	</ora>
+
+	<ora id="02" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>WEB technológiák</kurzus_név>
+		<oktató>Agárdi Anita</oktató>
+		<időpont>
+			<kezdet>14</kezdet>
+			<vég>16</vég>
+			<nap>Hétfő</nap>
+		</időpont>
+		<helyszín>30-as előadó</helyszín>
+	</ora>
+
+	<ora id="03" tipus="gyakorlat">
+		<szak>BP</szak>
+		<kurzus_név>WEB technológiák</kurzus_név>
+		<oktató>Agárdi Anita</oktató>
+		<időpont>
+			<kezdet>16</kezdet>
+			<vég>18</vég>
+			<nap>Hétfő</nap>
+		</időpont>
+		<helyszín>Inf/202</helyszín>
+	</ora>
+
+	<ora id="04" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Mesterséges intelligencia</kurzus_név>
+		<oktató>Fazekas Levente</oktató>
+		<időpont>
+			<kezdet>10</kezdet>
+			<vég>12</vég>
+			<nap>Kedd</nap>
+		</időpont>
+		<helyszín>32-es előadó</helyszín>
+	</ora>
+
+	<ora id="05" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Adatkezelés XML-ben</kurzus_név>
+		<oktató>Bednarik László</oktató>
+		<időpont>
+			<kezdet>12</kezdet>
+			<vég>14</vég>
+			<nap>Kedd</nap>
+		</időpont>
+		<helyszín>32-es előadó</helyszín>
+	</ora>
+
+	<ora id="06" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Algoritmusok és vizsgálatuk</kurzus_név>
+		<oktató>Házy Attila</oktató>
+		<időpont>
+			<kezdet>14</kezdet>
+			<vég>16</vég>
+			<nap>Kedd</nap>
+		</időpont>
+		<helyszín>A/1 320</helyszín>
+	</ora>
+
+	<ora id="07" tipus="gyakorlat">
+		<szak>BP</szak>
+		<kurzus_név>Algoritmusok és vizsgálatuk</kurzus_név>
+		<oktató>Házy Attila</oktató>
+		<időpont>
+			<kezdet>16</kezdet>
+			<vég>18</vég>
+			<nap>Kedd</nap>
+		</időpont>
+		<helyszín>A/1 320</helyszín>
+	</ora>
+
+	<ora id="08" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Számitógépi hálózatok</kurzus_név>
+		<oktató>Kovács Szilveszter</oktató>
+		<időpont>
+			<kezdet>8</kezdet>
+			<vég>10</vég>
+			<nap>Szerda</nap>
+		</időpont>
+		<helyszín>2-es előadó</helyszín>
+	</ora>
+
+	<ora id="09" tipus="gyakorlat">
+		<szak>BP</szak>
+		<kurzus_név>Adatkezelés XML-ben</kurzus_név>
+		<oktató>Bednarik László</oktató>
+		<időpont>
+			<kezdet>12</kezdet>
+			<vég>14</vég>
+			<nap>Szerda</nap>
+		</időpont>
+		<helyszín>Inf/103</helyszín>
+	</ora>
+
+	<ora id="10" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Vállalati információs rendszerek</kurzus_név>
+		<oktató>Sasvári Péter</oktató>
+		<időpont>
+			<kezdet>14</kezdet>
+			<vég>16</vég>
+			<nap>Szerda</nap>
+		</időpont>
+		<helyszín>Inf/101</helyszín>
+	</ora>
+
+	<ora id="11" tipus="gyakorlat">
+		<szak>BP</szak>
+		<kurzus_név>Vállalati információs rendszerek</kurzus_név>
+		<oktató>Sasvári Péter</oktató>
+		<időpont>
+			<kezdet>18</kezdet>
+			<vég>20</vég>
+			<nap>Szerda</nap>
+		</időpont>
+		<helyszín>Inf/101</helyszín>
+	</ora>
+
+	<ora id="12" tipus="elmélet">
+		<szak>BP</szak>
+		<kurzus_név>Mesterséges intelligencia</kurzus_név>
+		<oktató>Fazekas Levente</oktató>
+		<időpont>
+			<kezdet>10</kezdet>
+			<vég>12</vég>
+			<nap>Csütörtök</nap>
+		</időpont>
+		<helyszín>1-es előadó</helyszín>
+	</ora>
+
+	<ora id="13" tipus="gyakorlat">
+		<szak>BP</szak>
+		<kurzus_név>Számitógépi hálózatok</kurzus_név>
+		<oktató>Kovács Szilveszter</oktató>
+		<időpont>
+			<kezdet>12</kezdet>
+			<vég>14</vég>
+			<nap>Csütörtök</nap>
+		</időpont>
+		<helyszín>3-as előadó</helyszín>
+	</ora>
+
+	<ora id="14" tipus="gyakorlat">
+		<szak>BP</szak>
+		<kurzus_név>Játék prototípusok</kurzus_név>
+		<oktató>Kiss Áron</oktató>
+		<időpont>
+			<kezdet>16</kezdet>
+			<vég>20</vég>
+			<nap>Csütörtök</nap>
+		</időpont>
+		<helyszín>Inf/15</helyszín>
+	</ora>
+</R65UKG_orarend>

@@ -1,0 +1,2 @@
+<!ELEMENT R65UKG_kurzusfelvetel ()>
+<!ATTLIST jovahagyas (igen|nem) "nem">

@@ -1,0 +1,13 @@
+<!ELEMENT R65UKG_orarend (ora)>
+    !ELEMENT ora (szak, kurzus_név, oktató, időpont, helyszín)>
+        <!ELEMENT szak ANY>
+        <!ELEMENT kurzus_név ANY>
+        <!ELEMENT oktató ANY>
+        <!ELEMENT időpont (kezdet, vég, nap)>
+            <!ELEMENT kezdet ANY>
+            <!ELEMENT vég ANY>
+            <!ELEMENT nap ANY>
+        <!ELEMENT helyszín ANY>
+        
+<!ATTLIST ora id ID #REQUIRED>
+<!ATTLIST ora tipus (elmélet|gyakorlat) "elmélet">
