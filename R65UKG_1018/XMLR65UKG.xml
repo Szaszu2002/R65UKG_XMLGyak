@@ -80,10 +80,10 @@
     </Bár>
     <Bár B_ID="B02">
         <név>Majoros Birtok és Borház</név>
-        <ital></ital>
-        <ital></ital>
-        <cég></cég>
-        <FESZ_ID></FESZ_ID>
+        <ital>Majoros and Pearls Furmint</ital>
+        <ital>Majoros DRY Furmint and Hárslevelű Cuvée</ital>
+        <cég>Majoros Birtok és Borbár</cég>
+        <FESZ_ID>F02</FESZ_ID>
     </Bár>
 
     <Alkalmazott A_ID="A01">
