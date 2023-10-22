@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf=8"?>
+
+<Fesztivál_R65UKG xmls:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="XMLSchemaR65UKG.xsd">
+    <Fesztivál FESZ_ID="F01">
+        <név>Sziget fesztivál</név>
+        <helyszín>Margit-sziget</helyszín>
+        <év>2023</év>
+    </Fesztivál>
+    <Fesztivál id="F02">
+        <név>Kocsonyafesztivál</név>
+        <helyszín>Miskolc</helyszín>
+        <év>2023</év>
+    </Fesztivál>
+
+    <Résztvevő R_ID="R01">
+        <FESZ_ID>F02</FESZ_ID>
+        <név>Szabó Alexandra</név>
+        <diákigazolvány>72162660678</diákigazolvány>
+        <lakcím>
+            <település>Miskolc</település>
+            <utca>Harmat utca</utca>
+            <házszám>6</házszám>
+        </lakcím>
+    </Résztvevő>
+    <Résztvevő R_ID="R02">
+        <FESZ_ID>F02</FESZ_ID>
+        <név>Szabó Brigitta</név>
+        <diákigazolvány>73565776456</diákigazolvány>
+        <lakcím>
+            <település>Oszlár</település>
+            <utca>Arany János</utca>
+            <házszám>6</házszám>
+        </lakcím>
+    </Résztvevő>
+        
+    <Közlemény K_ID="K01">
+        <kérdező>Szabó Alexandra</kérdező>
+        <R_ID>R01</R_ID>
+        <NY_ID>NY02<NY_ID>
+    </Közlemény>
+    <Közlemény K_ID="K02">
+        <kérdező>Szabó Brigitta</kérdező>
+        <R_ID>R02</R_ID>
+        <NY_ID>NY01<NY_ID>
+    </Közlemény>
+
+    <Nyelvtudás NY_ID="NY01">
+        <nyelv>angol</nyelv>
+        <szint>B2</szint>
+    </Nyelvtudás>
+    <Nyelvtudás NY_ID="NY02">
+        <nyelv>angol</nyelv>
+        <szint>B1</szint>
+    </Nyelvtudás>
+
+    </Tulajdonos T_ID="T01">
+        <név>Gerendai Károly</név>
+        <adószám></adószám>
+        <alapítás>1993</alapítás>
+        <bevétel>8600 millió</bevétel>
+        <FESZ_ID>F01</FESZ_ID>
+    </Tulajdonos>
+    </Tulajdonos T_ID="T02">
+        <név>Rózsa Edit</név>
+        <adószám></adószám>
+        <alapítás>2001</alapítás>
+        <bevétel>120 millió</bevétel>
+        <FESZ_ID>F02</FESZ_ID>
+    </Tulajdonos>
+
+    <Bár B_ID="B01">
+        <név>Lokalista</név>
+        <ital>Lokalista Virgin</ital>
+        <ital>Virgin pina colada</ital>
+        <ital>Mojito</ital>
+        <ital>Lucky Driver</ital>
+        <cég>Lokalista Bistro and Cafe</cég>
+        <FESZ_ID>F02</FESZ_ID>
+    </Bár>
+    <Bár B_ID="B02">
+        <név>Majoros Birtok és Borház</név>
+        <ital></ital>
+        <ital></ital>
+        <cég></cég>
+        <FESZ_ID></FESZ_ID>
+    </Bár>
+
+    <Alkalmazott A_ID="A01">
+        <név>Aranyosi Borbála</név>
+        <műszak>Hétfő 8-16</műszak>
+        <műszak>Kedden 16-24</műszak>
+        <műszak>Csütörtökön 8-16</műszak>
+        <műszak>Pénteken 8-16</műszak>
+        <fizetés>350 000</fizetés>
+        <B_ID>B01</B_ID>
+    </Alkalmazott>
+    <Alkalmazott A_ID="A02">
+        <név>Heves Andrea</név>
+        <műszak>Hétfőn 16-24</műszak>
+        <műszak>Szerdán 8-16</műszak>
+        <műszak>Pénteken 16-24</műszak>
+        <műszak>Vasárnap 8-16</műszak>
+        <fizetés>370 000</fizetés>
+        <B_ID>B01</B_ID>
+    </Alkalmazott>
+
+    <Fellépő FEL_ID="FEL01">
+        <név>Billie Eilish</név>
+        <ország>Egyesült Államok</ország>
+        <díj>Grammy-díj és Golden Globe-díj</díj>
+        <FESZ_ID>F01</FESZ_ID>
+    </Fellépő>
+    <Fellépő FEL_ID="FEL02">
+        <név>David Guetta</név>
+        <ország>Franciaország</ország>
+        <díj></díj>
+        <FESZ_ID>F01</FESZ_ID>
+    </Fellépő>
+    <Fellépő FEL_ID="FEL03">
+        <név>Imagin Dragons</név>
+        <ország>Egyesült Államok</ország>
+        <díj></díj>
+        <FESZ_ID>F01</FESZ_ID>
+    </Fellépő>
+    <Fellépő FEL_ID="FEL03">
+        <név>Horváth Tamás</név>
+        <ország>Magyarország</ország>
+        <díj></díj>
+        <FESZ_ID>F02</FESZ_ID>
+    </Fellépő>
+
+</Fesztivál_R65UKG>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elemnetFormDefault="qualified">
+
+<xs:element name="név" type="xs:string"/>
+<xs:element name="helyszín" type="xs:string"/>
+<xs:element name="év" type="xs:év"/>
+<xs:element name="diákigazolvány" type="xs:diák"/> ///
+<xs:element name="település" type="xs:string"/>
+<xs:element name="utca" type="xs:string"/>
+<xs:element name="házszám" type="xs:number"/>
+<xs:element name="kérdező" type="xs:string"/>
+<xs:element name="nyelv" type="xs:string"/>
+<xs:element name="szint" type="xs:szint"/> ///
+<xs:element name="adószám" type="xs:adószám"/> ///
+<xs:element name="alapítás" type="xs:év"/> ///
+<xs:element name="bevétel" type="xs:string"/>
+<xs:element name="ital" type="xs:string"/>
+<xs:element name="cég" type="xs:string"/>
+<xs:element name="műszak" type="xs:string"/>
+<xs:element name="fizetés" type="xs:fizetés"/> ///
+<xs:element name="ország" type="xs:string"/>
+<xs:element name="díj" type="xs:string"/>
+
+<simpleType>
+    <restiction base="év" />
+        <pattern value=""/>
+</simpleType>
+<simpleType>
+    <restiction base="diák" />
+        <pattern value=""/>
+</simpleType>
+<simpleType>
+    <restiction base="adószám" />
+        <pattern value=""/>
+</simpleType>
+<simpleType>
+    <restiction base="fizetés" />
+        <pattern value=""/>
+</simpleType>
