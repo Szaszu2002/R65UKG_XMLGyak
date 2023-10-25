@@ -4,37 +4,150 @@
 
 <xs:element name="név" type="xs:string"/>
 <xs:element name="helyszín" type="xs:string"/>
-<xs:element name="év" type="xs:év"/>
-<xs:element name="diákigazolvány" type="xs:diák"/> ///
+<xs:element name="év" type="xs:string"/>
+<xs:element name="diákigazolvány" type="xs:integer"/> 
 <xs:element name="település" type="xs:string"/>
 <xs:element name="utca" type="xs:string"/>
-<xs:element name="házszám" type="xs:number"/>
+<xs:element name="házszám" type="xs:integer"/>
 <xs:element name="kérdező" type="xs:string"/>
 <xs:element name="nyelv" type="xs:string"/>
 <xs:element name="szint" type="xs:szint"/> ///
-<xs:element name="adószám" type="xs:adószám"/> ///
-<xs:element name="alapítás" type="xs:év"/> ///
+<xs:element name="adószám" type="xs:integer"/> 
+<xs:element name="alapítás" type="xs:integer"/>
 <xs:element name="bevétel" type="xs:string"/>
 <xs:element name="ital" type="xs:string"/>
 <xs:element name="cég" type="xs:string"/>
 <xs:element name="műszak" type="xs:string"/>
-<xs:element name="fizetés" type="xs:fizetés"/> ///
+<xs:element name="fizetés" type="xs:integer"/>
 <xs:element name="ország" type="xs:string"/>
 <xs:element name="díj" type="xs:string"/>
 
-<simpleType>
-    <restiction base="év" />
-        <pattern value=""/>
-</simpleType>
-<simpleType>
-    <restiction base="diák" />
-        <pattern value=""/>
-</simpleType>
-<simpleType>
-    <restiction base="adószám" />
-        <pattern value=""/>
-</simpleType>
-<simpleType>
-    <restiction base="fizetés" />
-        <pattern value=""/>
-</simpleType>
+<xs:attribute name="FESZ_ID" type="xs:ID"/>
+<xs:attribute name="R_ID" type="xs:ID"/>
+<xs:attribute name="K_ID" type="xs:ID"/>
+<xs:attribute name="NY_ID" type="xs:ID"/>
+<xs:attribute name="T_ID" type="xs:ID"/>
+<xs:attribute name="B_ID" type="xs:ID"/>
+<xs:attribute name="A_ID" type="xs:ID"/>
+<xs:attribute name="FEL_ID" type="xs:ID"/>
+
+<xs:attribute name="REF_FESZ_ID" type="xs:IDREF"/>
+<xs:attribute name="REF_B_ID" type="xs:IDREF"/>
+<xs:attribute name="REF_R_ID" type="xs:IDREF"/>
+<xs:attribute name="REF_NY_ID" type="xs:IDREF"/>
+
+
+
+
+<xs:simpleType>
+    <xs:restiction base="szint">
+        <pattern value="[A-C][0-4]"/>
+    </xs:restiction>
+</xs:simpleType>
+
+<xs:element name="lakcím">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="település"/>
+            <xs:element ref="utca"/>
+            <xs:element ref="házszám"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Fesztivál">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="név"/>
+            <xs:element ref="helyszín"/>
+            <xs:element ref="év"/>
+        </xs:sequence>
+        <xs:attribute ref="FESZ_ID"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Résztvevő">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="név"/>
+            <xs:element ref="diákigazolvány"/>
+            <xs:element ref="lakcím"/>
+        </xs:sequence>
+        <xs:attribute ref="R_ID"/>
+        <xs:attribute ref="REF_FESZ_ID"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Közlemény">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="kérdező"/>
+            <xs:element ref="R_ID"/>
+            <xs:element ref="NY_ID"/>
+        </xs:sequence>
+        <xs:attribute ref="K_ID"/>
+        <xs:attribute ref="REF_R_ID"/>
+        <xs:attribute ref="REF_NY_ID"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Nyelvtudás">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="nyelv"/>
+            <xs:element ref="szint"/>
+        </xs:sequence>
+        <xs:attribute ref="NY_ID"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Tulajdonos">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="név"/>
+            <xs:element ref="adószám"/>
+            <xs:element ref="alapítás"/>
+            <xs:element ref="bevétel"/>
+        </xs:sequence>
+        <xs:attribute ref="T_ID"/>
+        <xs:attribute ref="REF_FESZ_ID"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Bár">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="név"/>
+            <xs:element ref="ital"/>
+            <xs:element ref="cég"/>
+        </xs:sequence>
+        <xs:attribute ref="B_ID"/>
+        <xs:attribute ref="FESZ_ID"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Alkalmazott">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="név"/>
+            <xs:element ref="műszak"/>
+            <xs:element ref="fizetés"/>
+            <xs:element ref="B_ID"/>
+        </xs:sequence>
+        <xs:attribute ref="A_ID"/>
+        <xs:attribute ref="REF_B_ID"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Fellépő">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="név"/>
+            <xs:element ref="ország"/>
+            <xs:element ref="díj"/>
+            <xs:element ref="FESZ_ID"/>
+        </xs:sequence>
+        <xs:attribute ref="FEL_ID"/>
+        <xs:attribute ref="REF_FESZ_ID"/>
+    </xs:complexType>
+</xs:element>

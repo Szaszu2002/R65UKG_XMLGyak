@@ -7,7 +7,7 @@
         <helyszín>Margit-sziget</helyszín>
         <év>2023</év>
     </Fesztivál>
-    <Fesztivál id="F02">
+    <Fesztivál FESZ_ID="F02">
         <név>Kocsonyafesztivál</név>
         <helyszín>Miskolc</helyszín>
         <év>2023</év>
