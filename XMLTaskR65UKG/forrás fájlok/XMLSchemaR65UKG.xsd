@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elemnetFormDefault="qualified">
+
+<xs:element name="Név" type="xs:string"/>
+<xs:element name="Tárgykód" type="xs:string"/>
+<xs:element name="Típus" type="xs:string"/>
+<xs:element name="Időtartam" type="xs:integer"/>
+<xs:element name="Kezdet" type="xs:integer"/>
+<xs:element name="Mikor_van_lefoglalva" type="xs:string"/>
+<xs:element name="Milyen_tárgyra" type="xs:string"/>
+<xs:element name="Férőhely" type="xs:integer"/>
+<xs:element name="Vetítő állapota" type="xs:string"/>
+<xs:element name="Állapot" type="xs:string"/>
+<xs:element name="Teremszám" type="xs:string"/>
+<xs:element name="Telefonszám" type="xs:integer"/>
+<xs:element name="Épület" type="xs:string"/>
+<xs:element name="Emelet" type="xs:string"/>
+<xs:element name="Szobaszám" type="xs:integer"/>
+<xs:element name="Email_cím" type="xs:string"/>
+<xs:element name="Szak" type="xs:string"/>
+
+<xs:attribute name="Taid" type="xs:ID"/>
+<xs:attribute name="Tid" type="xs:ID"/>
+<xs:attribute name="Oid" type="xs:ID"/>
+<xs:attribute name="Kid" type="xs:ID"/>
+<xs:attribute name="Neptunkód" type="xs:ID"/>
+<xs:attribute name="Did" type="xs:ID"/>
+
+<xs:attribute name="REF_Taid" type="xs:IDREF"/>
+<xs:attribute name="REF_Tid" type="xs:IDREF"/>
+<xs:attribute name="REF_Oid" type="xs:IDREF"/>
+<xs:attribute name="REF_Kid" type="xs:IDREF"/>
+<xs:attribute name="REF_Neptunkód" type="xs:IDREF"/>
+
+<xs:element name="Szoba">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="Épület"/>
+            <xs:element ref="Emelet"/>
+            <xs:element ref="Szobaszám"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Tárgyak">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="Név"/>
+            <xs:element ref="Tárgykód"/>
+            <xs:element ref="Típus"/>
+            <xs:element ref="Időtartam"/>
+            <xs:element ref="Kezdet"/>
+        </xs:sequence>
+        <xs:attribute ref="Taid"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Teremfoglalás">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="Mikor_van_lefoglalva"/>
+            <xs:element ref="Milyen_tárgyra"/>
+        </xs:sequence>
+        <xs:attribute ref="REF_Taid"/>
+        <xs:attribute ref="REF_Tid"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Terem">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="Férőhely"/>
+            <xs:element ref="Vetítő_állapota"/>
+            <xs:element ref="Állapot"/>
+            <xs:element ref="Teremszám"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:attribute ref="Tid"/>
+</xs:element>
+
+<xs:element name="Oktatott_tárgyak">
+    <xs:complexType>
+        <xs:attribute ref="REF_Taid"/>
+        <xs:attribute ref="REF_Oid"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Oktatók">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="Név"/>
+            <xs:element ref="Telefonszám"/>
+            <xs:element ref="Szoba"/>
+            <xs:element ref="Email_cím"/>
+        </xs:sequence>
+        <xs:attribute ref="Oid"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Foglalkoztatottság">
+    <xs:complexType>
+        <xs:attribute ref="REF_Oid"/>
+        <xs:attribute ref="REF_Kid"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Dékán">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="Név"/>
+            <xs:element ref="Email_cím"/>
+            <xs:element ref="Szoba"/>
+            <xs:element ref="Telefonszám"/>
+        </xs:sequence>
+        <xs:attribute ref="Did"/>
+        <xs:attribute ref="REF_Kid"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Kar">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="Név"/>
+            <xs:element ref="Szak"/>
+        </xs:sequence>
+        <xs:attribute ref="Kid"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Hallgatói_jogviszony">
+    <xs:complexType>
+        <xs:attribute ref="Kid"/>
+        <xs:attribute ref="REF_Neptunkód"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Hallgatók">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="Név"/>
+            <xs:element ref="Email_cím"/>
+            <xs:element ref="Telefonszám"/>
+            <xs:element ref="Szak"/>
+        </xs:sequence>
+        <xs:attribute ref="Neptunkód"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="Felvett_tárgyak">
+    <xs:complexType>
+        <xs:attribute ref="REF_Neptunkód"/>
+        <xs:attribute ref="REF_Taid"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="R65UKG_Teremfoglalás">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="Tárgyak"/>
+            <xs:element ref="Teremfoglalás"/>
+            <xs:element ref="Terem"/>
+            <xs:element ref="Oktatott_tárgyak"/>
+            <xs:element ref="Oktatók"/>
+            <xs:element ref="Foglalkoztatottság"/>
+            <xs:element ref="Dékán"/>
+            <xs:element ref="Kar"/>
+            <xs:element ref="Hallgatói_jogviszony"/>
+            <xs:element ref="Hallgatók"/>
+            <xs:element ref="Felvett_tárgyak"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>

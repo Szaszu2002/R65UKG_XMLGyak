@@ -17,16 +17,30 @@
         <Kezdet></Kezdet>
         <Kezdet></Kezdet>
     </Tárgyak>
+    <Tárgyak Taid="03">
+        <Név></Név>
+        <Tárgykód></Tárgykód>
+        <Típus></Típus> 
+        <Időtartam></Időtartam> 
+        <Kezdet></Kezdet>
+        <Kezdet></Kezdet>
+    </Tárgyak>
 
     <Teremfoglalás>
-        <Taid></Taid>
-        <Tid></Tid>
+        <REF_Taid></REF_Taid>
+        <REF_Tid></REF_Tid>
         <Mikor_van_lefoglalva></Mikor_van_lefoglalva>
         <Milyen_tárgyra></Milyen_tárgyra>
     </Teremfoglalás>
     <Teremfoglalás>
-        <Taid></Taid>
-        <Tid></Tid>
+        <REF_Taid></REF_Taid>
+        <REF_Tid></REF_Tid>
+        <Mikor_van_lefoglalva></Mikor_van_lefoglalva>
+        <Milyen_tárgyra></Milyen_tárgyra>
+    </Teremfoglalás>
+    <Teremfoglalás>
+        <REF_Taid></REF_Taid>
+        <REF_Tid></REF_Tid>
         <Mikor_van_lefoglalva></Mikor_van_lefoglalva>
         <Milyen_tárgyra></Milyen_tárgyra>
     </Teremfoglalás>
@@ -43,14 +57,24 @@
         <Állapot></Állapot>
         <Teremszám></Teremszám>
     </Terem>
+    <Terem Tid="03">
+        <Férőhely></Férőhely>
+        <Vetítő_állapota></Vetítő_állapota> 
+        <Állapot></Állapot>
+        <Teremszám></Teremszám>
+    </Terem>
 
     <Oktatott_tárgyak>
-        <Taid></Taid>
-        <Oid></Oid>
+        <REF_Taid></REF_Taid>
+        <REF_Oid></REF_Oid>
     </Oktatott_tárgyak>
     <Oktatott_tárgyak>
-        <Taid></Taid>
-        <Oid></Oid>
+        <REF_Taid></REF_Taid>
+        <REF_Oid></REF_Oid>
+    </Oktatott_tárgyak>
+    <Oktatott_tárgyak>
+        <REF_Taid></REF_Taid>
+        <REF_Oid></REF_Oid>
     </Oktatott_tárgyak>
 
     <Oktatók Oid="01">
@@ -77,18 +101,34 @@
         <Email_cím></Email_cím>
         <Email_cím></Email_cím>
     </Oktatók>
+    <Oktatók Oid="03">
+        <Név></Név> 
+        <Telefonszám></Telefonszám> 
+        <Telefonszám></Telefonszám> 
+        <Szoba>
+            <Épület></Épület>
+            <Emelet></Emelet>
+            <Szobaszám></Szobaszám>
+        </Szoba>
+        <Email_cím></Email_cím>
+        <Email_cím></Email_cím>
+    </Oktatók>
 
     <Foglalkoztatottság>
-        <Oid></Oid>
-        <Kid><Kid>
+        <REF_Oid></REF_Oid>
+        <REF_Kid><REF_Kid>
     </Foglalkoztatottság> 
     <Foglalkoztatottság>
-        <Oid></Oid>
-        <Kid><Kid>
+        <REF_Oid></REF_Oid>
+        <REF_Kid><REF_Kid>
+    </Foglalkoztatottság> 
+    <Foglalkoztatottság>
+        <REF_Oid></REF_Oid>
+        <REF_Kid><REF_Kid>
     </Foglalkoztatottság> 
 
     <Dékán Did="01">
-        <Kid><Kid>
+        <REF_Kid><REF_Kid>
         <Név></Név>
         <Email_cím></Email_cím>
         <Email_cím></Email_cím>
@@ -101,7 +141,20 @@
         <Telefonszám></Telefonszám> 
     </Dékán>
     <Dékán Did="02">
-        <Kid><Kid>
+        <REF_Kid><REF_Kid>
+        <Név></Név>
+        <Email_cím></Email_cím>
+        <Email_cím></Email_cím>
+        <Szoba>
+            <Épület></Épület>
+            <Emelet></Emelet>
+            <Szobaszám></Szobaszám>
+        </Szoba>
+        <Telefonszám></Telefonszám> 
+        <Telefonszám></Telefonszám> 
+    </Dékán>
+    <Dékán Did="03">
+        <REF_Kid><REF_Kid>
         <Név></Név>
         <Email_cím></Email_cím>
         <Email_cím></Email_cím>
@@ -124,16 +177,29 @@
         <Szak></Szak>
         <Szak></Szak>
     </Kar>
+    <Kar Kid="03">
+        <Név></Név>
+        <Szak></Szak>
+        <Szak></Szak>
+    </Kar>
 
     <Hallgatói_jogviszony>
-        <Kid></Kid>
-        <Neptunkód></Neptunkód>
+        <REF_Kid></REF_Kid>
+        <REF_Neptunkód></REF_Neptunkód>
     </Hallgatói_jogviszony> 
     <Hallgatói_jogviszony>
-        <Kid></Kid>
-        <Neptunkód></Neptunkód>
+        <REF_Kid></REF_Kid>
+        <REF_Neptunkód></REF_Neptunkód>
     </Hallgatói_jogviszony> 
 
+    <Hallgatók Neptunkód="">
+        <Név></Név>
+        <Email_cím></Email_cím>
+        <Email_cím></Email_cím>
+        <Telefonszám></Telefonszám> 
+        <Telefonszám></Telefonszám> 
+        <Szak></Szak>
+    </Hallgatók>
     <Hallgatók Neptunkód="">
         <Név></Név>
         <Email_cím></Email_cím>
@@ -152,12 +218,16 @@
     </Hallgatók>
 
     <Felvett_tárgyak>
-        <Neptunkód></Neptunkód>
-        <Taid></Taid>
+        <REF_Neptunkód></REF_Neptunkód>
+        <REF_Taid></REF_Taid>
     </Felvett_tárgyak>
     <Felvett_tárgyak>
-        <Neptunkód></Neptunkód>
-        <Taid></Taid>
+        <REF_Neptunkód></REF_Neptunkód>
+        <REF_Taid></REF_Taid>
+    </Felvett_tárgyak>
+    <Felvett_tárgyak>
+        <REF_Neptunkód></REF_Neptunkód>
+        <REF_Taid></REF_Taid>
     </Felvett_tárgyak>
     
 </R65UKG_Teremfoglalás>
