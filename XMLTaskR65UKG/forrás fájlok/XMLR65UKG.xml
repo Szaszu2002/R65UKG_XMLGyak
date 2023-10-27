@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf=8"?>
+
+<R65UKG_Teremfoglalás xmls:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaR65UKG.xsd">
+    <Tárgyak Taid="01">
+        <Név></Név>
+        <Tárgykód></Tárgykód>
+        <Típus></Típus> 
+        <Időtartam></Időtartam> 
+        <Kezdet></Kezdet>
+        <Kezdet></Kezdet>
+    </Tárgyak>
+    <Tárgyak Taid="02">
+        <Név></Név>
+        <Tárgykód></Tárgykód>
+        <Típus></Típus> 
+        <Időtartam></Időtartam> 
+        <Kezdet></Kezdet>
+        <Kezdet></Kezdet>
+    </Tárgyak>
+
+    <Teremfoglalás>
+        <Taid></Taid>
+        <Tid></Tid>
+        <Mikor_van_lefoglalva></Mikor_van_lefoglalva>
+        <Milyen_tárgyra></Milyen_tárgyra>
+    </Teremfoglalás>
+    <Teremfoglalás>
+        <Taid></Taid>
+        <Tid></Tid>
+        <Mikor_van_lefoglalva></Mikor_van_lefoglalva>
+        <Milyen_tárgyra></Milyen_tárgyra>
+    </Teremfoglalás>
+
+    <Terem Tid="01">
+        <Férőhely></Férőhely>
+        <Vetítő_állapota></Vetítő_állapota> 
+        <Állapot></Állapot>
+        <Teremszám></Teremszám>
+    </Terem>
+    <Terem Tid="02">
+        <Férőhely></Férőhely>
+        <Vetítő_állapota></Vetítő_állapota> 
+        <Állapot></Állapot>
+        <Teremszám></Teremszám>
+    </Terem>
+
+    <Oktatott_tárgyak>
+        <Taid></Taid>
+        <Oid></Oid>
+    </Oktatott_tárgyak>
+    <Oktatott_tárgyak>
+        <Taid></Taid>
+        <Oid></Oid>
+    </Oktatott_tárgyak>
+
+    <Oktatók Oid="01">
+        <Név></Név> 
+        <Telefonszám></Telefonszám> 
+        <Telefonszám></Telefonszám> 
+        <Szoba>
+            <Épület></Épület>
+            <Emelet></Emelet>
+            <Szobaszám></Szobaszám>
+        </Szoba>
+        <Email_cím></Email_cím>
+        <Email_cím></Email_cím>
+    </Oktatók>
+    <Oktatók Oid="02">
+        <Név></Név> 
+        <Telefonszám></Telefonszám> 
+        <Telefonszám></Telefonszám> 
+        <Szoba>
+            <Épület></Épület>
+            <Emelet></Emelet>
+            <Szobaszám></Szobaszám>
+        </Szoba>
+        <Email_cím></Email_cím>
+        <Email_cím></Email_cím>
+    </Oktatók>
+
+    <Foglalkoztatottság>
+        <Oid></Oid>
+        <Kid><Kid>
+    </Foglalkoztatottság> 
+    <Foglalkoztatottság>
+        <Oid></Oid>
+        <Kid><Kid>
+    </Foglalkoztatottság> 
+
+    <Dékán Did="01">
+        <Kid><Kid>
+        <Név></Név>
+        <Email_cím></Email_cím>
+        <Email_cím></Email_cím>
+        <Szoba>
+            <Épület></Épület>
+            <Emelet></Emelet>
+            <Szobaszám></Szobaszám>
+        </Szoba>
+        <Telefonszám></Telefonszám> 
+        <Telefonszám></Telefonszám> 
+    </Dékán>
+    <Dékán Did="02">
+        <Kid><Kid>
+        <Név></Név>
+        <Email_cím></Email_cím>
+        <Email_cím></Email_cím>
+        <Szoba>
+            <Épület></Épület>
+            <Emelet></Emelet>
+            <Szobaszám></Szobaszám>
+        </Szoba>
+        <Telefonszám></Telefonszám> 
+        <Telefonszám></Telefonszám> 
+    </Dékán>
+
+    <Kar Kid="01">
+        <Név></Név>
+        <Szak></Szak>
+        <Szak></Szak>
+    </Kar>
+    <Kar Kid="02">
+        <Név></Név>
+        <Szak></Szak>
+        <Szak></Szak>
+    </Kar>
+
+    <Hallgatói_jogviszony>
+        <Kid></Kid>
+        <Neptunkód></Neptunkód>
+    </Hallgatói_jogviszony> 
+    <Hallgatói_jogviszony>
+        <Kid></Kid>
+        <Neptunkód></Neptunkód>
+    </Hallgatói_jogviszony> 
+
+    <Hallgatók Neptunkód="">
+        <Név></Név>
+        <Email_cím></Email_cím>
+        <Email_cím></Email_cím>
+        <Telefonszám></Telefonszám> 
+        <Telefonszám></Telefonszám> 
+        <Szak></Szak>
+    </Hallgatók>
+    <Hallgatók Neptunkód="">
+        <Név></Név>
+        <Email_cím></Email_cím>
+        <Email_cím></Email_cím>
+        <Telefonszám></Telefonszám> 
+        <Telefonszám></Telefonszám> 
+        <Szak></Szak>
+    </Hallgatók>
+
+    <Felvett_tárgyak>
+        <Neptunkód></Neptunkód>
+        <Taid></Taid>
+    </Felvett_tárgyak>
+    <Felvett_tárgyak>
+        <Neptunkód></Neptunkód>
+        <Taid></Taid>
+    </Felvett_tárgyak>
+    
+</R65UKG_Teremfoglalás>
