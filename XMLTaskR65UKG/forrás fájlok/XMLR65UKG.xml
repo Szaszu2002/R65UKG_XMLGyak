@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf=8"?>
 
 <R65UKG_Teremfoglalás xmls:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaR65UKG.xsd">
+    <!--Tárgyak tábla adatai-->
     <Tárgyak Taid="01">
         <Név></Név>
         <Tárgykód></Tárgykód>
@@ -26,6 +27,7 @@
         <Kezdet></Kezdet>
     </Tárgyak>
 
+    <!--Teremfoglalás tábla adatai-->
     <Teremfoglalás>
         <REF_Taid></REF_Taid>
         <REF_Tid></REF_Tid>
@@ -45,6 +47,7 @@
         <Milyen_tárgyra></Milyen_tárgyra>
     </Teremfoglalás>
 
+    <!--Terem tábla adatai-->
     <Terem Tid="01">
         <Férőhely></Férőhely>
         <Vetítő_állapota></Vetítő_állapota> 
@@ -64,6 +67,7 @@
         <Teremszám></Teremszám>
     </Terem>
 
+    <!--Oktatott tárgyak tábla adatai-->
     <Oktatott_tárgyak>
         <REF_Taid></REF_Taid>
         <REF_Oid></REF_Oid>
@@ -77,6 +81,7 @@
         <REF_Oid></REF_Oid>
     </Oktatott_tárgyak>
 
+    <!--Oktatók tábla adatai-->
     <Oktatók Oid="01">
         <Név></Név> 
         <Telefonszám></Telefonszám> 
@@ -114,6 +119,7 @@
         <Email_cím></Email_cím>
     </Oktatók>
 
+    <!--Foglalkoztatottság tábla adatai-->
     <Foglalkoztatottság>
         <REF_Oid></REF_Oid>
         <REF_Kid><REF_Kid>
@@ -127,6 +133,7 @@
         <REF_Kid><REF_Kid>
     </Foglalkoztatottság> 
 
+    <!--Dékán tábla adatai-->
     <Dékán Did="01">
         <REF_Kid><REF_Kid>
         <Név></Név>
@@ -167,6 +174,7 @@
         <Telefonszám></Telefonszám> 
     </Dékán>
 
+    <!--Kar tábla adatai-->
     <Kar Kid="01">
         <Név></Név>
         <Szak></Szak>
@@ -183,6 +191,7 @@
         <Szak></Szak>
     </Kar>
 
+    <!--Hallgatói jogviszony tábla adatai-->
     <Hallgatói_jogviszony>
         <REF_Kid></REF_Kid>
         <REF_Neptunkód></REF_Neptunkód>
@@ -192,6 +201,7 @@
         <REF_Neptunkód></REF_Neptunkód>
     </Hallgatói_jogviszony> 
 
+    <!--Hallgatók tábla adatai-->
     <Hallgatók Neptunkód="">
         <Név></Név>
         <Email_cím></Email_cím>
@@ -217,6 +227,7 @@
         <Szak></Szak>
     </Hallgatók>
 
+    <!--Felvett tárgyak tábla adatai-->
     <Felvett_tárgyak>
         <REF_Neptunkód></REF_Neptunkód>
         <REF_Taid></REF_Taid>

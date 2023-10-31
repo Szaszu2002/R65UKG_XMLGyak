@@ -2,6 +2,8 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elemnetFormDefault="qualified">
 
+<!--Egyszerű elemek -->
+
 <xs:element name="Név" type="xs:string"/>
 <xs:element name="Tárgykód" type="xs:string"/>
 <xs:element name="Típus" type="xs:string"/>
@@ -20,6 +22,7 @@
 <xs:element name="Email_cím" type="xs:string"/>
 <xs:element name="Szak" type="xs:string"/>
 
+<!--Elsődleges kulcsok-->
 <xs:attribute name="Taid" type="xs:ID"/>
 <xs:attribute name="Tid" type="xs:ID"/>
 <xs:attribute name="Oid" type="xs:ID"/>
@@ -27,11 +30,15 @@
 <xs:attribute name="Neptunkód" type="xs:ID"/>
 <xs:attribute name="Did" type="xs:ID"/>
 
+<!--Idegen kulcsok-->
+
 <xs:attribute name="REF_Taid" type="xs:IDREF"/>
 <xs:attribute name="REF_Tid" type="xs:IDREF"/>
 <xs:attribute name="REF_Oid" type="xs:IDREF"/>
 <xs:attribute name="REF_Kid" type="xs:IDREF"/>
 <xs:attribute name="REF_Neptunkód" type="xs:IDREF"/>
+
+<!--Összetett elemek-->
 
 <xs:element name="Szoba">
     <xs:complexType>
