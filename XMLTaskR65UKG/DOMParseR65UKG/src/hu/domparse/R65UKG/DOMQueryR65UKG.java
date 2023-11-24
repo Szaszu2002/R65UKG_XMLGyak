@@ -86,4 +86,22 @@ public class DOMQueryR65UKG {
             }
         }
     }
+
+    private static void printOktato(Node node, String condition){
+        if(node.getNodeType() == Node.ELEMENT_NODE){
+            Element element = (Element) node;
+            String Oid = elem.getAttribute("Oid");
+
+            Node nname = element.getElementsByTagname("Név").item(0);
+            String name = nname.getTextContent();
+
+            Node nbuilding = element.getElementsByTagname("Épület").item(0);
+            String building = nbuilding.getTextContent();
+
+            if(building.equals(condition)){
+                System.out.printf(name);
+                System.out.println("");
+            }
+        }
+    }
 }
