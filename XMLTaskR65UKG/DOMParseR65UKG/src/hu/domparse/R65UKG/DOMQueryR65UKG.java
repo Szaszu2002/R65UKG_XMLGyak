@@ -8,6 +8,11 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.dom.*;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.w3c.dom.Text;
 import org.xml.sax.SAXException;
 
 public class DOMQueryR65UKG {
@@ -44,7 +49,7 @@ public class DOMQueryR65UKG {
         NodeList teremList = doc.getElementsByTagname("Terem");
         for(int i=0; i<teremList.getLength(); i++){
             Node node = teremList.item(i);
-            printOktato(node, 100);
+            printTerem(node, 100);
         }
 
         System.out.println("");
@@ -52,7 +57,7 @@ public class DOMQueryR65UKG {
 
         for(int i=0; i<teremList.getLength(); i++){
             Node node = teremList.item(i);
-            printOktato(node, "Van");
+            printTerem2(node, "Van");
         }
 
         System.out.println("");
@@ -61,7 +66,7 @@ public class DOMQueryR65UKG {
         NodeList karList = doc.getElementsByTagname("Kar");
         for(int i=0; i<karList.getLength(); i++){
             Node node = karList.item(i);
-            printOktato(node, "Gépészmérnőki és Informatikai Kar");
+            printSzak(node, "Gépészmérnőki és Informatikai Kar");
         }
 
     }
@@ -69,13 +74,13 @@ public class DOMQueryR65UKG {
     private static void printTargy(Node node, String condition){
         if(node.getNodeType() == Node.ELEMENT_NODE){
             Element element = (Element) node;
-            String Taid = elem.getAttribute("Taid");
+            String Taid = element.getAttribute("Taid");
 
             Node nname = element.getElementsByTagname("Név").item(0);
             String name = nname.getTextContent();
 
             Node nsubject_code = element.getElementsByTagname("Tárgykód").item(0);
-            String subject_code = nsubject_code.getTextContent()
+            String subject_code = nsubject_code.getTextContent();
 
             Node ntype = element.getElementsByTagname("Típus").item(0);
             String type = ntype.getTextContent();
@@ -90,7 +95,7 @@ public class DOMQueryR65UKG {
     private static void printOktato(Node node, String condition){
         if(node.getNodeType() == Node.ELEMENT_NODE){
             Element element = (Element) node;
-            String Oid = elem.getAttribute("Oid");
+            String Oid = element.getAttribute("Oid");
 
             Node nname = element.getElementsByTagname("Név").item(0);
             String name = nname.getTextContent();
@@ -104,4 +109,59 @@ public class DOMQueryR65UKG {
             }
         }
     }
+
+    private static void printTerem(Node node, int condition){
+        if(node.getNodeType() == Node.ELEMENT_NODE){
+            Element element = (Element) node;
+            String Tid = element.getAttribute("Tid");
+
+            Node nroom_number= element.getElementsByTagname("Teremszám").item(0);
+            String room_number = nroom_number.getTextContent();
+
+            Node nseat = element.getElementsByTagname("Férőhely").item(0);
+            int seat = nseat.getTextContent();
+
+            if(seat > condition){
+                System.out.printf("Teremszáma: " + room_number + ", férőhely: " + seat);
+                System.out.println("");
+            }
+        }
+    }
+
+    private static void printTerem2(Node node, string condition){
+        if(node.getNodeType() == Node.ELEMENT_NODE){
+            Element element = (Element) node;
+            String Tid = element.getAttribute("Tid");
+
+            Node nroom_number= element.getElementsByTagname("Teremszám").item(0);
+            String room_number = nroom_number.getTextContent();
+
+            Node nprojector = element.getElementsByTagname("Vetítő_állapota").item(0);
+            int projector = nprojector.getTextContent();
+
+            if(projector.equals(condition)){
+                System.out.printf("Teremszáma: " + room_number);
+                System.out.println("");
+            }
+        }
+    }
+
+    private static void printSzak(Node node, String condition){
+        if(node.getNodeType() == Node.ELEMENT_NODE){
+            Element element = (Element) node;
+            String Kid = element.getAttribute("Kid");
+
+            Node nname = element.getElementsByTagname("Név").item(0);
+            String name = nname.getTextContent();
+
+            Node nspecialised = element.getElementsByTagname("Szak").item(0);
+            String specialised = nspecialised.getTextContent();
+
+            if(name.equals(condition)){
+                System.out.printf(specialised);
+                System.out.println("");
+            }
+        }
+    }
+
 }
