@@ -17,7 +17,7 @@ import org.xml.sax.SAXException;
 
 public class DOMQueryR65UKG {
 
-	public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException, TransformerException {
+	public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException{
         File xmlFile = new File("XMLR65UKG.xml");
 
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -119,7 +119,7 @@ public class DOMQueryR65UKG {
             String room_number = nroom_number.getTextContent();
 
             Node nseat = element.getElementsByTagname("Férőhely").item(0);
-            int seat = nseat.getTextContent();
+            int seat = Integer.parseInt(nseat.getTextContent());
 
             if(seat > condition){
                 System.out.printf("Teremszáma: " + room_number + ", férőhely: " + seat);
@@ -128,7 +128,7 @@ public class DOMQueryR65UKG {
         }
     }
 
-    private static void printTerem2(Node node, string condition){
+    private static void printTerem2(Node node, String condition){
         if(node.getNodeType() == Node.ELEMENT_NODE){
             Element element = (Element) node;
             String Tid = element.getAttribute("Tid");
@@ -137,7 +137,7 @@ public class DOMQueryR65UKG {
             String room_number = nroom_number.getTextContent();
 
             Node nprojector = element.getElementsByTagname("Vetítő_állapota").item(0);
-            int projector = nprojector.getTextContent();
+            String projector = nprojector.getTextContent();
 
             if(projector.equals(condition)){
                 System.out.printf("Teremszáma: " + room_number);
