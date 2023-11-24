@@ -64,6 +64,26 @@ public class DOMQueryR65UKG {
             printOktato(node, "Gépészmérnőki és Informatikai Kar");
         }
 
+    }
 
+    private static void printTargy(Node node, String condition){
+        if(node.getNodeType() == Node.ELEMENT_NODE){
+            Element element = (Element) node;
+            String Taid = elem.getAttribute("Taid");
+
+            Node nname = element.getElementsByTagname("Név").item(0);
+            String name = nname.getTextContent();
+
+            Node nsubject_code = element.getElementsByTagname("Tárgykód").item(0);
+            String subject_code = nsubject_code.getTextContent()
+
+            Node ntype = element.getElementsByTagname("Típus").item(0);
+            String type = ntype.getTextContent();
+
+            if(type.equals(condition)){
+                System.out.printf("Tárgyneve: " + name + ", tárgykódja: " + subject_code);
+                System.out.println("");
+            }
+        }
     }
 }
