@@ -23,12 +23,12 @@ public class DOMQueryR65UKG {
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dbBuilder = dbFactory.newDocumentBuilder();
 
-        Document doc = dbBuilder.parser(xmlFile);
+        Document doc = dbBuilder.parse(xmlFile);
         doc.getDocumentElement().normalize();
 
         System.out.println("1. Azok a tárgyak, melyekből elmélet és gyakorlat is van egyaránt: ");
 
-        NodeList targyList= doc.getElementsByTagname("Tárgyak");
+        NodeList targyList= doc.getElementsByTagName("Tárgyak");
         for(int i=0; i<targyList.getLength(); i++){
             Node node = targyList.item(i);
             printTargy(node, "elmélet és gyakorlat");
@@ -37,7 +37,7 @@ public class DOMQueryR65UKG {
         System.out.println("");
         System.out.println("2. Azok az oktatok, melyeknek az Informatikai épületben van a szobájuk: ");
 
-        NodeList oktatoList = doc.getElementsByTagname("Oktatók");
+        NodeList oktatoList = doc.getElementsByTagName("Oktatók");
         for(int i=0; i<oktatoList.getLength(); i++){
             Node node = oktatoList.item(i);
             printOktato(node, "Informatikai épület");
@@ -46,7 +46,7 @@ public class DOMQueryR65UKG {
         System.out.println("");
         System.out.println("3. Azok a termek, ahol 100-nál nagyobb a férőhely: ");
 
-        NodeList teremList = doc.getElementsByTagname("Terem");
+        NodeList teremList = doc.getElementsByTagName("Terem");
         for(int i=0; i<teremList.getLength(); i++){
             Node node = teremList.item(i);
             printTerem(node, 100);
@@ -63,7 +63,7 @@ public class DOMQueryR65UKG {
         System.out.println("");
         System.out.println("5. A Gépészmérnőki és Informatikai Kar szakjai: ");
 
-        NodeList karList = doc.getElementsByTagname("Kar");
+        NodeList karList = doc.getElementsByTagName("Kar");
         for(int i=0; i<karList.getLength(); i++){
             Node node = karList.item(i);
             printSzak(node, "Gépészmérnőki és Informatikai Kar");
@@ -76,13 +76,13 @@ public class DOMQueryR65UKG {
             Element element = (Element) node;
             String Taid = element.getAttribute("Taid");
 
-            Node nname = element.getElementsByTagname("Név").item(0);
+            Node nname = element.getElementsByTagName("Név").item(0);
             String name = nname.getTextContent();
 
-            Node nsubject_code = element.getElementsByTagname("Tárgykód").item(0);
+            Node nsubject_code = element.getElementsByTagName("Tárgykód").item(0);
             String subject_code = nsubject_code.getTextContent();
 
-            Node ntype = element.getElementsByTagname("Típus").item(0);
+            Node ntype = element.getElementsByTagName("Típus").item(0);
             String type = ntype.getTextContent();
 
             if(type.equals(condition)){
@@ -97,10 +97,10 @@ public class DOMQueryR65UKG {
             Element element = (Element) node;
             String Oid = element.getAttribute("Oid");
 
-            Node nname = element.getElementsByTagname("Név").item(0);
+            Node nname = element.getElementsByTagName("Név").item(0);
             String name = nname.getTextContent();
 
-            Node nbuilding = element.getElementsByTagname("Épület").item(0);
+            Node nbuilding = element.getElementsByTagName("Épület").item(0);
             String building = nbuilding.getTextContent();
 
             if(building.equals(condition)){
@@ -115,10 +115,10 @@ public class DOMQueryR65UKG {
             Element element = (Element) node;
             String Tid = element.getAttribute("Tid");
 
-            Node nroom_number= element.getElementsByTagname("Teremszám").item(0);
+            Node nroom_number= element.getElementsByTagName("Teremszám").item(0);
             String room_number = nroom_number.getTextContent();
 
-            Node nseat = element.getElementsByTagname("Férőhely").item(0);
+            Node nseat = element.getElementsByTagName("Férőhely").item(0);
             int seat = Integer.parseInt(nseat.getTextContent());
 
             if(seat > condition){
@@ -133,10 +133,10 @@ public class DOMQueryR65UKG {
             Element element = (Element) node;
             String Tid = element.getAttribute("Tid");
 
-            Node nroom_number= element.getElementsByTagname("Teremszám").item(0);
+            Node nroom_number= element.getElementsByTagName("Teremszám").item(0);
             String room_number = nroom_number.getTextContent();
 
-            Node nprojector = element.getElementsByTagname("Vetítő_állapota").item(0);
+            Node nprojector = element.getElementsByTagName("Vetítő_állapota").item(0);
             String projector = nprojector.getTextContent();
 
             if(projector.equals(condition)){
@@ -151,10 +151,10 @@ public class DOMQueryR65UKG {
             Element element = (Element) node;
             String Kid = element.getAttribute("Kid");
 
-            Node nname = element.getElementsByTagname("Név").item(0);
+            Node nname = element.getElementsByTagName("Név").item(0);
             String name = nname.getTextContent();
 
-            Node nspecialised = element.getElementsByTagname("Szak").item(0);
+            Node nspecialised = element.getElementsByTagName("Szak").item(0);
             String specialised = nspecialised.getTextContent();
 
             if(name.equals(condition)){

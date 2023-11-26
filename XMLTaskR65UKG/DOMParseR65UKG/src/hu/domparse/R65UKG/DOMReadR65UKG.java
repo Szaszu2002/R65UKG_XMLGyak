@@ -19,7 +19,7 @@ import org.xml.sax.SAXException;
 public class DOMReadR65UKG {
 
 	public static void main(String[] args) {
-        File xmlFile = new File("XMLR65UKG.xml");
+        File xmlFile = new File("/XMLTaskR65UKG/DOMParseR65UKG/src/hu/domparse/R65UKG/R65UKG.xml");
         Document doc = ReadFile(xmlFile);
 
         if(doc!=null){
