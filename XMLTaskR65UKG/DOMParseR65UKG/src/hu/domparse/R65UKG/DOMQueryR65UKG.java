@@ -57,16 +57,16 @@ public class DOMQueryR65UKG {
 
         for(int i=0; i<teremList.getLength(); i++){
             Node node = teremList.item(i);
-            printTerem2(node, "Van");
+            printTerem2(node,"Van");
         }
 
         System.out.println("");
-        System.out.println("5. A Gépészmérnőki és Informatikai Kar szakjai: ");
+        System.out.println("5. Annak a diáknak a neve, akihez az R65UKG Neptunkód tartozik: ");
 
-        NodeList karList = doc.getElementsByTagName("Kar");
-        for(int i=0; i<karList.getLength(); i++){
-            Node node = karList.item(i);
-            printSzak(node, "Gépészmérnőki és Informatikai Kar");
+        NodeList hallgatoList = doc.getElementsByTagName("Hallgatók");
+        for(int i=0; i<hallgatoList.getLength(); i++){
+            Node node = hallgatoList.item(i);
+            printHallgato(node,"R65UKG");
         }
 
     }
@@ -153,19 +153,16 @@ public class DOMQueryR65UKG {
         }
     }
 
-    private static void printSzak(Node node, String condition){
+    private static void printHallgato(Node node, String condition){
         if(node.getNodeType() == Node.ELEMENT_NODE){
             Element element = (Element) node;
-            String Kid = element.getAttribute("Kid");
+            String Neptun_code = element.getAttribute("Neptunkód");
 
             Node nname = element.getElementsByTagName("Név").item(0);
             String name = nname.getTextContent();
 
-            Node nspecialised = element.getElementsByTagName("Szak").item(0);
-            String specialised = nspecialised.getTextContent();
-
-            if(name.equals(condition)){
-                System.out.printf(specialised);
+            if(Neptun_code.equals(condition)){
+                System.out.printf(name);
                 System.out.println("");
             }
         }
