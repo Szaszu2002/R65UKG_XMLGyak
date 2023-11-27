@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf=8"?>
-
-<R65UKG_Teremfoglalás xmls:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaR65UKG.xsd">
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<R65UKG_Teremfoglalás xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaR65UKG.xsd">
     <!--Tárgyak tábla adatai-->
     <Tárgyak Taid="01">
         <Név>Idegen nyelv 1.</Név>
@@ -65,85 +64,55 @@
     </Tárgyak>
 
     <!--Teremfoglalás tábla adatai-->
-    <Teremfoglalás>
-        <REF_Taid>08</REF_Taid>
-        <REF_Tid>11</REF_Tid>
+    <Teremfoglalás REF_Taid="08" REF_Tid="11">
         <Mikor_van_lefoglalva>Csütörtök 16</Mikor_van_lefoglalva>
         <Milyen_tárgyra>Játék prototípusok</Milyen_tárgyra>
     </Teremfoglalás>
-    <Teremfoglalás>
-        <REF_Taid>07</REF_Taid>
-        <REF_Tid>08</REF_Tid>
+    <Teremfoglalás REF_Taid="07" REF_Tid="08">
         <Mikor_van_lefoglalva>Szerda 18</Mikor_van_lefoglalva>
         <Milyen_tárgyra>Vállalati információs rendszerek</Milyen_tárgyra>
     </Teremfoglalás>
-    <Teremfoglalás>
-        <REF_Taid>07</REF_Taid>
-        <REF_Tid>07</REF_Tid>
+    <Teremfoglalás REF_Taid="07" REF_Tid="07">
         <Mikor_van_lefoglalva>Szerda 14</Mikor_van_lefoglalva>
         <Milyen_tárgyra>Vállalati információs rendszerek</Milyen_tárgyra>
     </Teremfoglalás>
-        <Teremfoglalás>
-        <REF_Taid>06</REF_Taid>
-        <REF_Tid>10</REF_Tid>
+    <Teremfoglalás REF_Taid="06" REF_Tid="10">
         <Mikor_van_lefoglalva>Csütörtök 12</Mikor_van_lefoglalva>
         <Milyen_tárgyra>Számitógépi hálózatok</Milyen_tárgyra>
     </Teremfoglalás>
-        <Teremfoglalás>
-        <REF_Taid>06</REF_Taid>
-        <REF_Tid>06</REF_Tid>
+    <Teremfoglalás REF_Taid="06" REF_Tid="06">
         <Mikor_van_lefoglalva>Szerda 8</Mikor_van_lefoglalva>
         <Milyen_tárgyra>Számitógépi hálózatok</Milyen_tárgyra>
     </Teremfoglalás>
-        <Teremfoglalás>
-        <REF_Taid>05</REF_Taid>
-        <REF_Tid>05</REF_Tid>
+    <Teremfoglalás REF_Taid="05" REF_Tid="05">
         <Mikor_van_lefoglalva>Kedd 14 </Mikor_van_lefoglalva>
         <Milyen_tárgyra>Algoritmusok és vizsgálatuk</Milyen_tárgyra>
     </Teremfoglalás>
-        <Teremfoglalás>
-        <REF_Taid>04</REF_Taid>
-        <REF_Tid>04</REF_Tid>
+    <Teremfoglalás REF_Taid="04" REF_Tid="04">
         <Mikor_van_lefoglalva>Kedd 12</Mikor_van_lefoglalva>
         <Milyen_tárgyra>Adatkezelés XML-ben</Milyen_tárgyra>
     </Teremfoglalás>
-    </Teremfoglalás>
-        <Teremfoglalás>
-        <REF_Taid>04</REF_Taid>
-        <REF_Tid>07</REF_Tid>
+    <Teremfoglalás REF_Taid="04" REF_Tid="07">
         <Mikor_van_lefoglalva>Szerda 12</Mikor_van_lefoglalva>
         <Milyen_tárgyra>Adatkezelés XML-ben</Milyen_tárgyra>
     </Teremfoglalás>
-    </Teremfoglalás>
-        <Teremfoglalás>
-        <REF_Taid>03</REF_Taid>
-        <REF_Tid>04</REF_Tid>
+    <Teremfoglalás REF_Taid="03" REF_Tid="04">
         <Mikor_van_lefoglalva>Kedd 10</Mikor_van_lefoglalva>
         <Milyen_tárgyra>Mesterséges intelligencia alapok</Milyen_tárgyra>
     </Teremfoglalás>
-    </Teremfoglalás>
-        <Teremfoglalás>
-        <REF_Taid>03</REF_Taid>
-        <REF_Tid>09</REF_Tid>
+    <Teremfoglalás REF_Taid="03" REF_Tid="09">
         <Mikor_van_lefoglalva>Csütörtök 10</Mikor_van_lefoglalva>
         <Milyen_tárgyra>Mesterséges intelligencia alapok</Milyen_tárgyra>
     </Teremfoglalás>
-    </Teremfoglalás>
-        <Teremfoglalás>
-        <REF_Taid>02</REF_Taid>
-        <REF_Tid>03</REF_Tid>
+    <Teremfoglalás REF_Taid="02" REF_Tid="03">
         <Mikor_van_lefoglalva>Hétfő 16</Mikor_van_lefoglalva>
         <Milyen_tárgyra>WEB technológiák</Milyen_tárgyra>
     </Teremfoglalás>
-        </Teremfoglalás>
-        <Teremfoglalás>
-        <REF_Taid>02</REF_Taid>
-        <REF_Tid>02</REF_Tid>
+    <Teremfoglalás REF_Taid="02" REF_Tid="02">
         <Mikor_van_lefoglalva>Hétfő 14</Mikor_van_lefoglalva>
         <Milyen_tárgyra>WEB technológiák</Milyen_tárgyra>
     </Teremfoglalás>
-        </Teremfoglalás>
-        <Teremfoglalás>
+    <Teremfoglalás REF_Taid="01" REF_Tid="01">
         <REF_Taid>01</REF_Taid>
         <REF_Tid>01</REF_Tid>
         <Mikor_van_lefoglalva>Hétfő 12</Mikor_van_lefoglalva>
@@ -151,109 +120,93 @@
     </Teremfoglalás>
 
     <!--Terem tábla adatai-->
-    <Terem Tid="01">
+    <Terem Tid="12">
+<Férőhely>400</Férőhely>
+<Teremszám>37-es előadó</Teremszám>
+</Terem>
+<Terem Tid="01">
         <Férőhely>28</Férőhely>
         <Vetítő_állapota>Nincs</Vetítő_állapota> 
-        <Állapot></Állapot>
+        <Állapot/>
         <Teremszám>A5/202</Teremszám>
     </Terem>
     <Terem Tid="02">
         <Férőhely>100</Férőhely>
         <Vetítő_állapota>Nincs</Vetítő_állapota> 
-        <Állapot></Állapot>
+        <Állapot/>
         <Teremszám>30-as előadó</Teremszám>
     </Terem>
     <Terem Tid="03">
         <Férőhely>-</Férőhely>
         <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot></Állapot>
+        <Állapot/>
         <Teremszám>Inf/202</Teremszám>
     </Terem>
     <Terem Tid="04">
         <Férőhely>300</Férőhely>
         <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot></Állapot>
+        <Állapot/>
         <Teremszám>32-es előadó</Teremszám>
     </Terem>
     <Terem Tid="05">
         <Férőhely>54</Férőhely>
         <Vetítő_állapota>Nincs</Vetítő_állapota> 
-        <Állapot></Állapot>
+        <Állapot/>
         <Teremszám>A1/320</Teremszám>
     </Terem>
     <Terem Tid="06">
         <Férőhely>312</Férőhely>
         <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot></Állapot>
+        <Állapot/>
         <Teremszám>2-es előadó</Teremszám>
     </Terem>
     <Terem Tid="07">
         <Férőhely>-</Férőhely>
         <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot></Állapot>
+        <Állapot/>
         <Teremszám>Inf/101</Teremszám>
     </Terem>
     <Terem Tid="08">
         <Férőhely>-</Férőhely>
         <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot></Állapot>
+        <Állapot/>
         <Teremszám>Inf/103</Teremszám>
     </Terem>
     <Terem Tid="09">
         <Férőhely>504</Férőhely>
         <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot></Állapot>
+        <Állapot/>
         <Teremszám>1-es előadó</Teremszám>
     </Terem>
     <Terem Tid="10">
         <Férőhely>384</Férőhely>
         <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot></Állapot>
+        <Állapot/>
         <Teremszám>3-as előadó</Teremszám>
     </Terem>
-        <Terem Tid="11">
+    <Terem Tid="11">
         <Férőhely>-</Férőhely>
         <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot></Állapot>
+        <Állapot/>
         <Teremszám>Inf/15</Teremszám>
     </Terem>
 
-    <!--Oktatott tárgyak tábla adatai-->
-    <Oktatott_tárgyak>
-        <REF_Taid>08</REF_Taid>
-        <REF_Oid>08</REF_Oid>
-    </Oktatott_tárgyak>
-    <Oktatott_tárgyak>
-        <REF_Taid>07</REF_Taid>
-        <REF_Oid>07</REF_Oid>
-    </Oktatott_tárgyak>
-    <Oktatott_tárgyak>
-        <REF_Taid>06</REF_Taid>
-        <REF_Oid>06</REF_Oid>
-    </Oktatott_tárgyak>
-    <Oktatott_tárgyak>
-        <REF_Taid>05</REF_Taid>
-        <REF_Oid>05</REF_Oid>
-    </Oktatott_tárgyak>
-    <Oktatott_tárgyak>
-        <REF_Taid>04</REF_Taid>
-        <REF_Oid>04</REF_Oid>
-    </Oktatott_tárgyak>
-    <Oktatott_tárgyak>
-        <REF_Taid>03</REF_Taid>
-        <REF_Oid>03</REF_Oid>
-    </Oktatott_tárgyak>
-    <Oktatott_tárgyak>
-        <REF_Taid>02</REF_Taid>
-        <REF_Oid>02</REF_Oid>
-    </Oktatott_tárgyak>
-    <Oktatott_tárgyak>
-        <REF_Taid>01</REF_Taid>
-        <REF_Oid>01</REF_Oid>
-    </Oktatott_tárgyak>
+    <!--Oktatott tárgyak (kapcsoló tábla) tábla adatai-->
+    <Oktatott_tárgyak REF_Oid="08" REF_Taid="08"/>
+    <Oktatott_tárgyak REF_Oid="07" REF_Taid="07"/>
+    <Oktatott_tárgyak REF_Oid="06" REF_Taid="06"/>
+    <Oktatott_tárgyak REF_Oid="05" REF_Taid="05"/>
+    <Oktatott_tárgyak REF_Oid="04" REF_Taid="04"/>
+    <Oktatott_tárgyak REF_Oid="03" REF_Taid="03"/>
+    <Oktatott_tárgyak REF_Oid="02" REF_Taid="02"/>
+    <Oktatott_tárgyak REF_Oid="01" REF_Taid="01"/>
 
     <!--Oktatók tábla adatai-->
-    <Oktatók Oid="01">
+    <Oktatók Oid="09">
+<Név>Tompa Tamás</Név>
+<Email_cím>tompa@iit.uni-miskolc.hu</Email_cím>
+</Oktatók>
+<Oktatók Oid="13">
         <Név>Pásztor Krisztina</Név> 
         <Telefonszám>+36 46 565-11/17-71</Telefonszám>  
         <Szoba>
@@ -335,43 +288,18 @@
         <Email_cím>aitkiss@uni-miskolc.hu</Email_cím>
     </Oktatók>
 
-    <!--Foglalkoztatottság tábla adatai-->
-    <Foglalkoztatottság>
-        <REF_Oid>01</REF_Oid>
-        <REF_Kid>03<REF_Kid>
-    </Foglalkoztatottság> 
-    <Foglalkoztatottság>
-        <REF_Oid>02</REF_Oid>
-        <REF_Kid>03<REF_Kid>
-    </Foglalkoztatottság> 
-    <Foglalkoztatottság>
-        <REF_Oid>03</REF_Oid>
-        <REF_Kid>03<REF_Kid>
-    </Foglalkoztatottság> 
-    <Foglalkoztatottság>
-        <REF_Oid>04</REF_Oid>
-        <REF_Kid>03<REF_Kid>
-    </Foglalkoztatottság> 
-    <Foglalkoztatottság>
-        <REF_Oid>05</REF_Oid>
-        <REF_Kid>03<REF_Kid>
-    </Foglalkoztatottság> 
-    <Foglalkoztatottság>
-        <REF_Oid>06</REF_Oid>
-        <REF_Kid>03<REF_Kid>
-    </Foglalkoztatottság> 
-    <Foglalkoztatottság>
-        <REF_Oid>07</REF_Oid>
-        <REF_Kid>03<REF_Kid>
-    </Foglalkoztatottság> 
-    <Foglalkoztatottság>
-        <REF_Oid>08</REF_Oid>
-        <REF_Kid>03<REF_Kid>
-    </Foglalkoztatottság> 
+    <!--Foglalkoztatottság (kapcsoló tábla) tábla adatai-->
+    <Foglalkoztatottság REF_Kid="03" REF_Oid="01"/> 
+    <Foglalkoztatottság REF_Kid="03" REF_Oid="02"/> 
+    <Foglalkoztatottság REF_Kid="03" REF_Oid="03"/> 
+    <Foglalkoztatottság REF_Kid="03" REF_Oid="04"/> 
+    <Foglalkoztatottság REF_Kid="03" REF_Oid="05"/> 
+    <Foglalkoztatottság REF_Kid="03" REF_Oid="06"/> 
+    <Foglalkoztatottság REF_Kid="03" REF_Oid="07"/> 
+    <Foglalkoztatottság REF_Kid="03" REF_Oid="08"/> 
 
     <!--Dékán tábla adatai-->
-    <Dékán Did="01">
-        <REF_Kid>01<REF_Kid>
+    <Dékán Did="01" REF_Kid="01">
         <Név>Prof. Dr. Mucsi Gábor</Név>
         <Email_cím>rekbdhiv@uni-miskolc.hu</Email_cím>
         <Szoba>
@@ -381,8 +309,7 @@
         </Szoba>
         <Telefonszám>+36 46 565 111/1020</Telefonszám>  
     </Dékán>
-    <Dékán Did="02">
-        <REF_Kid>02<REF_Kid>
+    <Dékán Did="02" REF_Kid="02">
         <Név>Prof. Dr. Palotás Árpád Bence</Név>
         <Email_cím>arpad.palotas@uni-miskolc.hu</Email_cím>
         <Szoba>
@@ -393,8 +320,7 @@
         <Telefonszám>+36 46 565 111/1023</Telefonszám> 
         <Telefonszám>+36 46 565 111/2011</Telefonszám> 
     </Dékán>
-    <Dékán Did="03">
-        <REF_Kid>03<REF_Kid>
+    <Dékán Did="03" REF_Kid="03">
         <Név>Dr. Siménfalvi Zoltán</Név>
         <Email_cím>gkdh5@uni-miskolc.hu</Email_cím>
         <Szoba>
@@ -404,8 +330,7 @@
         </Szoba>
         <Telefonszám>+36 46 565 111/2352</Telefonszám>  
     </Dékán>
-    <Dékán Did="04">
-        <REF_Kid>04<REF_Kid>
+    <Dékán Did="04" REF_Kid="04">
         <Név>Prof. Dr. Csák Csilla</Név>
         <Email_cím>jogdekan@uni-miskolc.hu</Email_cím>
         <Szoba>
@@ -416,8 +341,7 @@
         <Telefonszám>+36 46 565 111/1350</Telefonszám> 
         <Telefonszám>+36 46 565 111/2006</Telefonszám>  
     </Dékán>
-    <Dékán Did="05">
-        <REF_Kid>05<REF_Kid>
+    <Dékán Did="05" REF_Kid="05">
         <Név>Veresné Dr. Somosi Mariann</Név>
         <Email_cím>gazddek@uni-miskolc.hu</Email_cím>
         <Szoba>
@@ -428,8 +352,7 @@
         <Telefonszám>+36 46 565 111/1005</Telefonszám>
         <Telefonszám>+36 46 565 111/1644</Telefonszám>
     </Dékán>
-    <Dékán Did="06">
-        <REF_Kid>06<REF_Kid>
+    <Dékán Did="06" REF_Kid="06">
         <Név>Dr. Illésné Dr. Kovács Mária</Név>
         <Email_cím>boldek@uni-miskolc.hu</Email_cím>
         <Szoba>
@@ -439,8 +362,7 @@
         </Szoba>
         <Telefonszám>+36 46 565 111/1497</Telefonszám>
     </Dékán>
-    <Dékán Did="07">
-        <REF_Kid>07<REF_Kid>
+    <Dékán Did="07" REF_Kid="07">
         <Név>Dr. Kiss-Tóth Emőke</Név>
         <Email_cím>rekefk@uni-miskolc.hu</Email_cím>
         <Szoba>
@@ -450,8 +372,7 @@
         </Szoba>
         <Telefonszám>+36 46 366 560</Telefonszám>
     </Dékán>
-    <Dékán Did="08">
-        <REF_Kid>08<REF_Kid>
+    <Dékán Did="08" REF_Kid="08">
         <Név>Dr. Papp Sándor</Név>
         <Email_cím>sandor.papp@uni-miskolc.hu</Email_cím>
         <Szoba>
@@ -538,22 +459,18 @@
         <Szak>Előadóművészet</Szak>
     </Kar>
 
-    <!--Hallgatói jogviszony tábla adatai-->
-    <Hallgatói_jogviszony>
-        <REF_Kid>03</REF_Kid>
-        <REF_Neptunkód>R65UKG</REF_Neptunkód>
-    </Hallgatói_jogviszony> 
-    <Hallgatói_jogviszony>
-        <REF_Kid>03</REF_Kid>
-        <REF_Neptunkód>ULA7Z2</REF_Neptunkód>
-    </Hallgatói_jogviszony> 
-    <Hallgatói_jogviszony>
-        <REF_Kid>03</REF_Kid>
-        <REF_Neptunkód>MPW46D</REF_Neptunkód>
-    </Hallgatói_jogviszony> 
+    <!--Hallgatói jogviszony (kapcsoló tábla) tábla adatai-->
+    <Hallgatói_jogviszony REF_Kid="03" REF_Neptunkód="R65UKG"/> 
+    <Hallgatói_jogviszony REF_Kid="03" REF_Neptunkód="ULA7Z2"/> 
+    <Hallgatói_jogviszony REF_Kid="03" REF_Neptunkód="MPW46D"/> 
 
     <!--Hallgatók tábla adatai-->
-    <Hallgatók Neptunkód="R65UKG">
+    <Hallgatók Neptunkód="G2GWPO">
+<Név>Tucsa Eszter Boglárka</Név>
+<Email_cím>tucsa.eszter@gmail.com</Email_cím>
+<Szak>mérnökinformatikus</Szak>
+</Hallgatók>
+<Hallgatók Neptunkód="R65UKG">
         <Név>Szabó Alexandra Marianna</Név>
         <Email_cím>szaboalexandra2002@freemail.hu</Email_cím>
         <Email_cím>szaboalexandram18@gmail.com</Email_cím>
@@ -573,82 +490,25 @@
         <Szak>Programtervező informatikus</Szak>
     </Hallgatók>
 
-    <!--Felvett tárgyak tábla adatai-->
-    <Felvett_tárgyak>
-        <REF_Neptunkód>R65UKG</REF_Neptunkód>
-        <REF_Taid>01</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>R65UKG</REF_Neptunkód>
-        <REF_Taid>02</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>R65UKG</REF_Neptunkód>
-        <REF_Taid>03</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>R65UKG</REF_Neptunkód>
-        <REF_Taid>04</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>R65UKG</REF_Neptunkód>
-        <REF_Taid>05</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>R65UKG</REF_Neptunkód>
-        <REF_Taid>06</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>R65UKG</REF_Neptunkód>
-        <REF_Taid>07</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>R65UKG</REF_Neptunkód>
-        <REF_Taid>08</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>ULA7Z2</REF_Neptunkód>
-        <REF_Taid>01</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>ULA7Z2</REF_Neptunkód>
-        <REF_Taid>03</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>ULA7Z2</REF_Neptunkód>
-        <REF_Taid>04</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>ULA7Z2</REF_Neptunkód>
-        <REF_Taid>05</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>ULA7Z2</REF_Neptunkód>
-        <REF_Taid>07</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>ULA7Z2</REF_Neptunkód>
-        <REF_Taid>08</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>MPW46D</REF_Neptunkód>
-        <REF_Taid>02</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>MPW46D</REF_Neptunkód>
-        <REF_Taid>03</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>MPW46D</REF_Neptunkód>
-        <REF_Taid>04</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>MPW46D</REF_Neptunkód>
-        <REF_Taid>05</REF_Taid>
-    </Felvett_tárgyak>
-    <Felvett_tárgyak>
-        <REF_Neptunkód>MPW46D</REF_Neptunkód>
-        <REF_Taid>07</REF_Taid>
-    </Felvett_tárgyak>
+    <!--Felvett tárgyak (kapcsoló tábla) tábla adatai-->
+    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="01"/>
+    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="02"/>
+    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="03"/>
+    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="04"/>
+    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="05"/>
+    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="06"/>
+    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="07"/>
+    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="08"/>
+    <Felvett_tárgyak REF_Neptunkód="ULA7Z2" REF_Taid="01"/>
+    <Felvett_tárgyak REF_Neptunkód="ULA7Z2" REF_Taid="03"/>
+    <Felvett_tárgyak REF_Neptunkód="ULA7Z2" REF_Taid="04"/>
+    <Felvett_tárgyak REF_Neptunkód="ULA7Z2" REF_Taid="05"/>
+    <Felvett_tárgyak REF_Neptunkód="ULA7Z2" REF_Taid="07"/>
+    <Felvett_tárgyak REF_Neptunkód="ULA7Z2" REF_Taid="08"/>
+    <Felvett_tárgyak REF_Neptunkód="MPW46D" REF_Taid="02"/>
+    <Felvett_tárgyak REF_Neptunkód="MPW46D" REF_Taid="03"/>
+    <Felvett_tárgyak REF_Neptunkód="MPW46D" REF_Taid="04"/>
+    <Felvett_tárgyak REF_Neptunkód="MPW46D" REF_Taid="05"/>
+    <Felvett_tárgyak REF_Neptunkód="MPW46D" REF_Taid="07"/>
     
 </R65UKG_Teremfoglalás>

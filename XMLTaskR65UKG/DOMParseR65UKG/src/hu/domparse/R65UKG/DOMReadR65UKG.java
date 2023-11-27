@@ -19,7 +19,7 @@ import org.xml.sax.SAXException;
 public class DOMReadR65UKG {
 
 	public static void main(String[] args) {
-        File xmlFile = new File("/XMLTaskR65UKG/DOMParseR65UKG/src/hu/domparse/R65UKG/R65UKG.xml");
+        File xmlFile = new File("XMLTaskR65UKG/DOMParseR65UKG/src/hu/domparse/R65UKG/XMLR65UKG.xml");
         Document doc = ReadFile(xmlFile);
 
         if(doc!=null){
@@ -56,7 +56,12 @@ public class DOMReadR65UKG {
             for(int i=0; i<nodeList.getLength(); i++){
                 Node node = nodeList.item(i);
                 if(node.getNodeType()==Node.ELEMENT_NODE && !node.getTextContent().trim().isEmpty()){
-                    System.out.println(separation + "{ " + node.getNodeName() + " }: ");
+                    System.out.print(separation + "{ " + node.getNodeName() + " }: ");
+                    NamedNodeMap attribute = node.getAttributes();
+                    for(int j=0; j<attribute.getLength(); j++){
+                        System.out.print("-" + attribute.item(j));
+                    }
+                    System.out.println();
                     NodeList newNodeList = node.getChildNodes();
                     listData(newNodeList, separation);
                 }

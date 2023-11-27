@@ -18,7 +18,7 @@ import org.xml.sax.SAXException;
 public class DOMQueryR65UKG {
 
 	public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException{
-        File xmlFile = new File("XMLR65UKG.xml");
+        File xmlFile = new File("XMLTaskR65UKG/DOMParseR65UKG/src/hu/domparse/R65UKG/XMLR65UKG.xml");
 
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dbBuilder = dbFactory.newDocumentBuilder();
@@ -119,7 +119,14 @@ public class DOMQueryR65UKG {
             String room_number = nroom_number.getTextContent();
 
             Node nseat = element.getElementsByTagName("Férőhely").item(0);
-            int seat = Integer.parseInt(nseat.getTextContent());
+            int seat = 0;
+            try{
+                seat = Integer.parseInt(nseat.getTextContent());
+            }
+            catch(Exception e){
+                seat=0;
+            }
+            
 
             if(seat > condition){
                 System.out.printf("Teremszáma: " + room_number + ", férőhely: " + seat);

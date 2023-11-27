@@ -1,7 +1,7 @@
 package hu.domparse.R65UKG;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -19,13 +19,13 @@ import org.xml.sax.SAXException;
 public class DOMModifyR65UKG {
 
 	public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException, TransformerException {
-        File xmFile = new File("/XMLTaskR65UKG/DOMParseR65UKG/src/hu/domparse/R65UKG/R65UKG.xml");
+        File xmFile = new File("XMLTaskR65UKG/DOMParseR65UKG/src/hu/domparse/R65UKG/XMLR65UKG.xml");
 
         DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = dFactory.newDocumentBuilder();
 
         Document document = dBuilder.parse(xmFile);
-        document.getDocumentElement().normalize();
+        document.normalize();
 
         //beállítjuk a terem állapotát foglaltra
         NodeList nodeList = document.getElementsByTagName("Terem");
@@ -43,18 +43,20 @@ public class DOMModifyR65UKG {
                 }
             }
         }
+        Element root = document.getDocumentElement();
 
         //új oktatót adunk hozzá
         Element oktato = (Element)document.getElementsByTagName("Oktatók").item(0);
-        oktato.appendChild(createOktato(document,"09","Tompa Tamás","tompa@iit.uni-miskolc.hu"));
+        root.insertBefore(createOktato(document,"09","Tompa Tamás","tompa@iit.uni-miskolc.hu"), oktato);
+        
 
         //új hallgatót adunk hozzá
         Element hallgato = (Element)document.getElementsByTagName("Hallgatók").item(0);
-        hallgato.appendChild(createHallgato(document,"G2GWPO","Tucsa Eszter Boglárka","tucsa.eszter@gmail.com", "mérnökinformatikus"));
+        root.insertBefore(createHallgato(document,"G2GWPO","Tucsa Eszter Boglárka","tucsa.eszter@gmail.com", "mérnökinformatikus"), hallgato);
 
         //új termet adunk hozzá
         Element terem = (Element)document.getElementsByTagName("Terem").item(0);
-        terem.appendChild(createTerem(document,"12","400","37-es előadó"));
+        root.insertBefore(createTerem(document,"12","400","37-es előadó"), terem);
 
         //Az 1-es id-vel rendelkező oktatót módosítjuk 13-as id-re
         modifyId(document, "Oktatók", "Oid", "01", "13");
@@ -75,8 +77,17 @@ public class DOMModifyR65UKG {
 		DOMSource source = new DOMSource(document);
 		
 		File myFile = new File(filename);
-		
-		StreamResult console = new StreamResult(System.out);
+		PrintStream p = null;
+        try{
+            p = new PrintStream(System.out, true,"UTF-8");
+        }
+        catch(Exception e){
+            System.out.println("Don't make it!");
+            return;
+        }
+        
+		StreamResult console = new StreamResult(p);
+        
 		StreamResult file = new StreamResult(myFile);
 		
 		transf.transform(source, console);
