@@ -176,10 +176,10 @@
     <xs:field xpath="@Kid"/>
 </xs:key>
 
-<xs:key name="Did">
+<xs:unique name="Did">
     <xs:selector xpath="Dékán"/>
     <xs:field xpath="@Did"/>
-</xs:key>
+</xs:unique>
 
 <xs:key name="Oid">
     <xs:selector xpath="Oktatók"/>
