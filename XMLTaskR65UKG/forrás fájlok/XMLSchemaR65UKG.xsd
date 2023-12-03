@@ -23,20 +23,13 @@
 <xs:element name="Szak" type="xs:string"/>
 
 <!--Elsődleges kulcsok-->
-<xs:attribute name="Taid" type="xs:ID"/>
-<xs:attribute name="Tid" type="xs:ID"/>
-<xs:attribute name="Oid" type="xs:ID"/>
-<xs:attribute name="Kid" type="xs:ID"/>
-<xs:attribute name="Neptunkód" type="xs:ID"/>
-<xs:attribute name="Did" type="xs:ID"/>
+<xs:attribute name="Taid" type="xs:integer"/>
+<xs:attribute name="Tid" type="xs:integer"/>
+<xs:attribute name="Oid" type="xs:integer"/>
+<xs:attribute name="Kid" type="xs:integer"/>
+<xs:attribute name="Neptunkód" type="xs:string"/>
+<xs:attribute name="Did" type="xs:integer"/>
 
-<!--Idegen kulcsok-->
-
-<xs:attribute name="REF_Taid" type="xs:IDREF"/>
-<xs:attribute name="REF_Tid" type="xs:IDREF"/>
-<xs:attribute name="REF_Oid" type="xs:IDREF"/>
-<xs:attribute name="REF_Kid" type="xs:IDREF"/>
-<xs:attribute name="REF_Neptunkód" type="xs:IDREF"/>
 
 <!--Összetett elemek-->
 
@@ -59,8 +52,8 @@
             <xs:element ref="Időtartam"/>
             <xs:element ref="Kezdet"/>
         </xs:sequence>
-        <xs:attribute ref="Taid"/>
     </xs:complexType>
+    <xs:attribute ref="Taid" use="required"/>
 </xs:element>
 
 <xs:element name="Teremfoglalás">
@@ -69,9 +62,9 @@
             <xs:element ref="Mikor_van_lefoglalva"/>
             <xs:element ref="Milyen_tárgyra"/>
         </xs:sequence>
-        <xs:attribute ref="REF_Taid"/>
-        <xs:attribute ref="REF_Tid"/>
     </xs:complexType>
+    <xs:attribute ref="REF_Taid" use="required"/>
+    <xs:attribute ref="REF_Tid" use="required"/>
 </xs:element>
 
 <xs:element name="Terem">
@@ -83,14 +76,12 @@
             <xs:element ref="Teremszám"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:attribute ref="Tid"/>
+    <xs:attribute ref="REF_Tid" use="required"/>
 </xs:element>
 
 <xs:element name="Oktatott_tárgyak">
-    <xs:complexType>
-        <xs:attribute ref="REF_Taid"/>
-        <xs:attribute ref="REF_Oid"/>
-    </xs:complexType>
+    <xs:attribute ref="REF_Taid" use="required"/>
+    <xs:attribute ref="REF_Oid" use="required"/>
 </xs:element>
 
 <xs:element name="Oktatók">
@@ -101,15 +92,13 @@
             <xs:element ref="Szoba"/>
             <xs:element ref="Email_cím"/>
         </xs:sequence>
-        <xs:attribute ref="Oid"/>
     </xs:complexType>
+    <xs:attribute ref="Oid" use="required"/>
 </xs:element>
 
 <xs:element name="Foglalkoztatottság">
-    <xs:complexType>
-        <xs:attribute ref="REF_Oid"/>
-        <xs:attribute ref="REF_Kid"/>
-    </xs:complexType>
+    <xs:attribute ref="REF_Oid" use="required"/>
+    <xs:attribute ref="REF_Kid" use="required"/>
 </xs:element>
 
 <xs:element name="Dékán">
@@ -120,9 +109,9 @@
             <xs:element ref="Szoba"/>
             <xs:element ref="Telefonszám"/>
         </xs:sequence>
-        <xs:attribute ref="Did"/>
-        <xs:attribute ref="REF_Kid"/>
     </xs:complexType>
+    <xs:attribute ref="Did" use="required"/>
+    <xs:attribute ref="REF_Kid" use="required"/>
 </xs:element>
 
 <xs:element name="Kar">
@@ -131,15 +120,13 @@
             <xs:element ref="Név"/>
             <xs:element ref="Szak"/>
         </xs:sequence>
-        <xs:attribute ref="Kid"/>
     </xs:complexType>
+    <xs:attribute ref="Kid" use="required"/>
 </xs:element>
 
 <xs:element name="Hallgatói_jogviszony">
-    <xs:complexType>
-        <xs:attribute ref="Kid"/>
-        <xs:attribute ref="REF_Neptunkód"/>
-    </xs:complexType>
+    <xs:attribute ref="REF_Kid" use="required"/>
+    <xs:attribute ref="REF_Neptunkód" use="required"/>
 </xs:element>
 
 <xs:element name="Hallgatók">
@@ -150,15 +137,13 @@
             <xs:element ref="Telefonszám"/>
             <xs:element ref="Szak"/>
         </xs:sequence>
-        <xs:attribute ref="Neptunkód"/>
     </xs:complexType>
+    <xs:attribute ref="Neptunkód" use="required"/>
 </xs:element>
 
 <xs:element name="Felvett_tárgyak">
-    <xs:complexType>
-        <xs:attribute ref="REF_Neptunkód"/>
-        <xs:attribute ref="REF_Taid"/>
-    </xs:complexType>
+    <xs:attribute ref="REF_Neptunkód" use="required"/>
+    <xs:attribute ref="REF_Taid" use="required"/>
 </xs:element>
 
 <xs:element name="R65UKG_Teremfoglalás">
@@ -178,3 +163,64 @@
         </xs:sequence>
     </xs:complexType>
 </xs:element>
+
+<!--Elsődleges kulcsok-->
+
+<xs:key name="Neptunkód">
+    <xs:selector xpath="Hallgatók"/>
+    <xs:field xpath="@Neptunkód"/>
+</xs:key>
+
+<xs:key name="Kid">
+    <xs:selector xpath="Kar"/>
+    <xs:field xpath="@Kid"/>
+</xs:key>
+
+<xs:key name="Did">
+    <xs:selector xpath="Dékán"/>
+    <xs:field xpath="@Did"/>
+</xs:key>
+
+<xs:key name="Oid">
+    <xs:selector xpath="Oktatók"/>
+    <xs:field xpath="@Oid"/>
+</xs:key>
+
+<xs:key name="Tid">
+    <xs:selector xpath="Terem"/>
+    <xs:field xpath="@Tid"/>
+</xs:key>
+
+<xs:key name="Taid">
+    <xs:selector xpath="Tárgyak"/>
+    <xs:field xpath="@Taid"/>
+</xs:key>
+
+<!--Idegen kulcsok-->
+
+<xs:keyref name="REF_Neptunkód" refer="Neptunkód">
+    <xs:selector xpath="Hallgatók"/>
+    <xs:field xpath="@REF_Neptunkód"/>
+<xs:keyref>
+
+<xs:keyref name="REF_Taid" refer="Taid">
+    <xs:selector xpath="Tárgyak"/>
+    <xs:field xpath="@REF_Taid"/>
+<xs:keyref>
+
+<xs:keyref name="REF_Kid" refer="Kid">
+    <xs:selector xpath="Kar"/>
+    <xs:field xpath="@REF_Kid"/>
+<xs:keyref>
+
+<xs:keyref name="REF_Oid" refer="Oid">
+    <xs:selector xpath="Oktatók"/>
+    <xs:field xpath="@REF_Oid"/>
+<xs:keyref>
+
+<xs:keyref name="REF_Tid" refer="Tid">
+    <xs:selector xpath="Terem"/>
+    <xs:field xpath="@REF_Tid"/>
+<xs:keyref>
+    
+</xs:schema>

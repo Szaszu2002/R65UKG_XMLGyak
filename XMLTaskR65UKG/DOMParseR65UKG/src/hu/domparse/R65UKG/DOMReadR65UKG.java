@@ -56,10 +56,10 @@ public class DOMReadR65UKG {
             for(int i=0; i<nodeList.getLength(); i++){
                 Node node = nodeList.item(i);
                 if(node.getNodeType()==Node.ELEMENT_NODE && !node.getTextContent().trim().isEmpty()){
-                    System.out.print(separation + "{ " + node.getNodeName() + " }: ");
+                    System.out.print(separation + "< " + node.getNodeName() + " >: ");
                     NamedNodeMap attribute = node.getAttributes();
                     for(int j=0; j<attribute.getLength(); j++){
-                        System.out.print("-" + attribute.item(j));
+                        System.out.print(" - " + attribute.item(j));
                     }
                     System.out.println();
                     NodeList newNodeList = node.getChildNodes();

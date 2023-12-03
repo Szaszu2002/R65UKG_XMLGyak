@@ -2,7 +2,6 @@ package hu.domparse.R65UKG;
 
 import java.io.*;
 
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
