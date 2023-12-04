@@ -31,7 +31,7 @@ public class DOMModifyR65UKG {
         for(int i=0; i<nodeList.getLength(); i++){
             Node node = nodeList.item(i);
             if(node.getNodeType() == Node.ELEMENT_NODE){
-                if(node.getAttributes().getNamedItem("Tid").getTextContent().equals("1")){
+                if(node.getAttributes().getNamedItem("Tid").getTextContent().equals("01")){
                     NodeList childNodeList = node.getChildNodes();
                     for(int j=0; j<childNodeList.getLength(); j++){
                         Node childNode = childNodeList.item(j);
@@ -61,7 +61,7 @@ public class DOMModifyR65UKG {
         modifyId(document, "Oktatók", "Oid", "01", "13");
 
         //Lemenjük a modosított dokumentumot
-        saveDocument(document, "modify.txt");
+        saveDocument(document, "modify.xml");
 
     }
 

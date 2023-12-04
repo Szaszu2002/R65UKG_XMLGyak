@@ -28,7 +28,7 @@ public class DOMWriteR65UKG {
         document.normalize();
 
         //Lemenjük a dokumentumot
-        saveDocument(document, "write.txt");
+        saveDocument(document, "XMLR65UKG1.xml");
 
     }
 

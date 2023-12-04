@@ -127,7 +127,7 @@
 <Terem Tid="01">
         <Férőhely>28</Férőhely>
         <Vetítő_állapota>Nincs</Vetítő_állapota> 
-        <Állapot/>
+        <Állapot>Foglalt</Állapot>
         <Teremszám>A5/202</Teremszám>
     </Terem>
     <Terem Tid="02">
