@@ -1,0 +1,104 @@
+{
+	"R65UKG_kurzusfelvetel": {
+		"hallgato": {
+			"hnev": "Szabó Alexandra Marianna",
+			"szulnev": "Szabó Alexandra Marianna",
+			"szak": "Programtervező informatikus"
+		},
+		"kurzusok": {
+			"kurzus": [
+				{
+					"kurzusneve": "Idegen nyelv 1.",
+					"kredit": 0,
+					"hely": "A/5 202",
+					"idopont": "Hétfő, 12-14",
+					"oktato": "Pásztor Krisztina"
+				},
+				{
+					"kurzusneve": "WEB technológiák",
+					"kredit": 5,
+					"hely": "30-as előadó",
+					"idopont": "Hétfő, 14-16",
+					"oktato": "Agárdi Anita"
+				},
+				{
+					"kurzusneve": "WEB technológiák",
+					"kredit": 5,
+					"hely": "Inf/202",
+					"idopont": "Hétfő, 16-18",
+					"oktato": "Agárdi Anita"
+				},
+				{
+					"kurzusneve": "Mesterséges intelligencia",
+					"kredit": 5,
+					"hely": "32-es előadó",
+					"idopont": "Kedd, 10-12",
+					"oktato": "Fazekas Levente"
+				},
+				{
+					"kurzusneve": "Adatkezelés XML-ben",
+					"kredit": 5,
+					"hely": "32-es előadó",
+					"idopont": "Kedd, 12-14",
+					"oktato": "Bednarik László"
+				},
+				{
+					"kurzusneve": "Algoritmusok és vizsgálatuk",
+					"kredit": 5,
+					"hely": "A/1 320",
+					"idopont": "Kedd, 14-18",
+					"oktato": "Házy Attila"
+				},
+				{
+					"kurzusneve": "Számitógépi hálózatok",
+					"kredit": 5,
+					"hely": "2-es előadó",
+					"idopont": "Szerda, 8-10",
+					"oktato": "Kovács Szilveszter"
+				},
+				{
+					"kurzusneve": "Adatkezelés XML-ben",
+					"kredit": 5,
+					"hely": "Inf/103",
+					"idopont": "Szerda, 12-14",
+					"oktato": "Bednarik László"
+				},
+				{
+					"kurzusneve": "Vállalati információs rendszerek",
+					"kredit": 5,
+					"hely": "Inf/101",
+					"idopont": "Szerda 14-16",
+					"oktato": "Sasvári Péter"
+				},
+				{
+					"kurzusneve": "Vállalati információs rendszerek",
+					"kredit": 5,
+					"hely": "Inf/101",
+					"idopont": "Szerda 18-20",
+					"oktato": "Sasvári Péter"
+				},
+				{
+					"kurzusneve": "Mesterséges intelligencia",
+					"kredit": 5,
+					"hely": "1-es előadó",
+					"idopont": "Csütörtök, 10-12",
+					"oktato": "Fazekas Levente"
+				},
+				{
+					"kurzusneve": "Számitógépi hálózatok",
+					"kredit": 5,
+					"hely": "3-as előadó",
+					"idopont": "Csütörtök, 12-14",
+					"oktato": "Kovács Szilveszter"
+				},
+				{
+					"kurzusneve": "Játék prototípusok",
+					"kredit": 5,
+					"hely": "Inf/15",
+					"idopont": "Csütörtök, 16-20",
+					"oktato": "Kiss Áron"
+				}
+			]
+		}
+	}
+}
