@@ -31,7 +31,5 @@ public class SaxR65UKG extends DefaultHandler{
         }catch(Exception e){
             e.printStackTrace();
         }
-
-        
     }
 }
