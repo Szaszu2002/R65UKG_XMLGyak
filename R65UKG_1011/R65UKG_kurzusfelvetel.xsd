@@ -9,14 +9,65 @@
 <xs:attribute  name="egyetem" type="xs:string"/>
 
 <xs:element name="kurzusneve" type="xs:string"/>
-<xs:element name="kredit" type="xs:Kredit"/> //saját tipus
+<xs:element name="kredit" type="xs:integer"/> 
 <xs:element name="hely" type="xs:string"/>
 <xs:element name="idopont" type="xs:string"/>
 <xs:element name="oktato" type="xs:string"/>
-<xs:attribute name="id" type="xs:ID"/> //saját tipus
+<xs:attribute name="id" type="xs:string"/> 
 <xs:attribute name="jovahagyas" type="Logikai"/> //saját tipus
 
-<simpleType>
-    <restiction base="Logikai" />
-        <pattern value=""/>
-</simpleType>
+<xs:simpleType name="Tanev">
+    <xs:restiction base="xs:string">
+        <xs:pattern value="20\d{2}/\d{2}"/>
+    </xs:restiction>
+</xs:simpleType>
+
+<xs:simpleType name="Logikai">
+    <xs:restiction base="xs:string">
+        <xs:enumeration value="igen"/>
+        <xs:enumeration value="nem"/>
+    </xs:restiction>
+</xs:simpleType>
+
+<xs:element name="hallgato">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="hnev"/>
+            <xs:element ref="szulnev"/>
+            <xs:element ref="szak"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="kurzus">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="kurzusneve"/>
+            <xs:element ref="kredit"/>
+            <xs:element ref="hely"/>
+            <xs:element ref="idopont"/>
+            <xs:element ref="oktato"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:attribute ref="id" use="required"/>
+    <xs:attribute ref="jovahagyas" default="igen"/>
+</xs:element>
+
+<xs:element name="kurzusok">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="kurzus" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="R65UKG_kurzusfelvetel">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="hallgato"/>
+            <xs:element ref="kurzusok"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:attribute ref="tanev"/>
+    <xs:attribute ref="egyetem"/>
+</xs:element>

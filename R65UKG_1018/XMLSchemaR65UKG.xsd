@@ -31,17 +31,10 @@
 <xs:attribute name="A_ID" type="xs:ID"/>
 <xs:attribute name="FEL_ID" type="xs:ID"/>
 
-<xs:attribute name="REF_FESZ_ID" type="xs:IDREF"/>
-<xs:attribute name="REF_B_ID" type="xs:IDREF"/>
-<xs:attribute name="REF_R_ID" type="xs:IDREF"/>
-<xs:attribute name="REF_NY_ID" type="xs:IDREF"/>
-
-
-
 
 <xs:simpleType>
     <xs:restiction base="szint">
-        <pattern value="[A-C][0-4]"/>
+        <xs:pattern value="[A-C][0-4]"/>
     </xs:restiction>
 </xs:simpleType>
 
@@ -62,8 +55,8 @@
             <xs:element ref="helyszín"/>
             <xs:element ref="év"/>
         </xs:sequence>
-        <xs:attribute ref="FESZ_ID"/>
     </xs:complexType>
+    <xs:attribute ref="FESZ_ID"/>
 </xs:element>
 
 <xs:element name="Résztvevő">
@@ -72,10 +65,10 @@
             <xs:element ref="név"/>
             <xs:element ref="diákigazolvány"/>
             <xs:element ref="lakcím"/>
-        </xs:sequence>
-        <xs:attribute ref="R_ID"/>
-        <xs:attribute ref="REF_FESZ_ID"/>
+        </xs:sequence>  
     </xs:complexType>
+    <xs:attribute ref="R_ID"/>
+    <xs:attribute ref="REF_FESZ_ID"/>
 </xs:element>
 
 <xs:element name="Közlemény">
@@ -83,10 +76,10 @@
         <xs:sequence>
             <xs:element ref="kérdező"/>
         </xs:sequence>
-        <xs:attribute ref="K_ID"/>
-        <xs:attribute ref="REF_R_ID"/>
-        <xs:attribute ref="REF_NY_ID"/>
     </xs:complexType>
+    <xs:attribute ref="K_ID"/>
+    <xs:attribute ref="REF_R_ID"/>
+    <xs:attribute ref="REF_NY_ID"/>
 </xs:element>
 
 <xs:element name="Nyelvtudás">
@@ -95,8 +88,8 @@
             <xs:element ref="nyelv"/>
             <xs:element ref="szint"/>
         </xs:sequence>
-        <xs:attribute ref="NY_ID"/>
     </xs:complexType>
+    <xs:attribute ref="NY_ID"/>
 </xs:element>
 
 <xs:element name="Tulajdonos">
@@ -107,9 +100,9 @@
             <xs:element ref="alapítás"/>
             <xs:element ref="bevétel"/>
         </xs:sequence>
-        <xs:attribute ref="T_ID"/>
-        <xs:attribute ref="REF_FESZ_ID"/>
     </xs:complexType>
+    <xs:attribute ref="T_ID"/>
+    <xs:attribute ref="REF_FESZ_ID"/>
 </xs:element>
 
 <xs:element name="Bár">
@@ -119,9 +112,9 @@
             <xs:element ref="ital"/>
             <xs:element ref="cég"/>
         </xs:sequence>
-        <xs:attribute ref="B_ID"/>
-        <xs:attribute ref="FESZ_ID"/>
     </xs:complexType>
+    <xs:attribute ref="B_ID"/>
+    <xs:attribute ref="FESZ_ID"/>
 </xs:element>
 
 <xs:element name="Alkalmazott">
@@ -131,10 +124,10 @@
             <xs:element ref="műszak"/>
             <xs:element ref="fizetés"/>
             <xs:element ref="B_ID"/>
-        </xs:sequence>
-        <xs:attribute ref="A_ID"/>
-        <xs:attribute ref="REF_B_ID"/>
+        </xs:sequence> 
     </xs:complexType>
+    <xs:attribute ref="A_ID"/>
+    <xs:attribute ref="REF_B_ID"/>
 </xs:element>
 
 <xs:element name="Fellépő">
@@ -145,7 +138,57 @@
             <xs:element ref="díj"/>
             <xs:element ref="FESZ_ID"/>
         </xs:sequence>
-        <xs:attribute ref="FEL_ID"/>
-        <xs:attribute ref="REF_FESZ_ID"/>
     </xs:complexType>
+    <xs:attribute ref="FEL_ID"/>
+    <xs:attribute ref="REF_FESZ_ID"/>
 </xs:element>
+
+<xs:key name="FESZ_ID">
+    <xs:selector xpath="Fesztivál"/>
+    <xs:field xpath="@FESZ_ID"/>
+</xs:key>
+<xs:key name="R_ID">
+    <xs:selector xpath="Résztvevő"/>
+    <xs:field xpath="@R_ID"/>
+</xs:key>
+<xs:key name="K_ID">
+    <xs:selector xpath="Közlemény"/>
+    <xs:field xpath="@K_ID"/>
+</xs:key>
+<xs:key name="NY_ID">
+    <xs:selector xpath="Nyelvtudás"/>
+    <xs:field xpath="@NY_ID"/>
+</xs:key>
+<xs:key name="T_ID">
+    <xs:selector xpath="Tulajdonos"/>
+    <xs:field xpath="@T_ID"/>
+</xs:key>
+<xs:key name="B_ID">
+    <xs:selector xpath="Bár"/>
+    <xs:field xpath="@B_ID"/>
+</xs:key>
+<xs:key name="A_ID">
+    <xs:selector xpath="Alkalmazott"/>
+    <xs:field xpath="@A_ID"/>
+</xs:key>
+<xs:key name="FEL_ID">
+    <xs:selector xpath="Fellépő"/>
+    <xs:field xpath="@FEL_ID"/>
+</xs:key>
+
+<xs:keyref name="REF_FESZ_ID" refer="FESZ_ID">
+    <xs:selector xpath="Fesztivál"/>
+    <xs:field xpath="@REF_FESZ_ID"/>
+</xs:keyref>
+<xs:keyref name="REF_B_ID" refer="B_ID">
+    <xs:selector xpath="Bár"/>
+    <xs:field xpath="@REF_B_ID"/>
+</xs:keyref>
+<xs:keyref name="REF_R_ID" refer="R_ID">
+    <xs:selector xpath="Résztvevő"/>
+    <xs:field xpath="@REF_R_ID"/>
+</xs:keyref>
+<xs:keyref name="REF_NY_ID" refer="NY_ID">
+    <xs:selector xpath="Nyelvtudás"/>
+    <xs:field xpath="@REF_NY_ID"/>
+</xs:keyref>

@@ -1,2 +1,6 @@
-<!ELEMENT R65UKG_kurzusfelvetel ()>
+<!ELEMENT R65UKG_kurzusfelvetel (kurzus*,időpont,jovahagyas)>
+    <!ELEMENT kurzus EMPTY>
+    <!ELEMENT idopont EMPTY>
+    <!ELEMENT jovahagyas EMPTY>
+    
 <!ATTLIST jovahagyas (igen|nem) "nem">
