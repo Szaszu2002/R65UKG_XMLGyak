@@ -24,7 +24,7 @@ public class DomModifyR65UKG{
         Element root =document.getDocumentElement();
 
         Element kurzus = (Element)document.getElementsByTagName("kurzus").item(0);
-        createOraado(document)
+        createOraado(document);
 
 
         saveDocument(document, "kurzusfelvetelModify1R65UKG.xml");
