@@ -4,7 +4,7 @@
         <html>
             <body>
                 <h2> Hallgatók adatai - for-each, value-of</h2>
-                <table border="1">
+                <table border="3" bgcolor="#C5E1A5">
                     <tr bgcolor="#9acd32">
                         <th>ID</th>
                         <th>Vezetéknév</th>
@@ -14,7 +14,7 @@
                         <th>Fizetés</th> 
                     </tr>
 
-                    <xsl:for-each select="hallgatoR65UKG/student">
+                    <xsl:for-each select="class/student">
                         <tr>
                             <td><xsl:value-of select = "@id"/></td>
                             <td><xsl:value-of select = "vezeteknev"/></td>

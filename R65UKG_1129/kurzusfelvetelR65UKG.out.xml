@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+   <body>
+      <div>
+         <h2>Szabó Alaexandra Marianna Kurzusfelvétel - 2023/24. I. félév</h2>
+         <ul>
+            <li>évfolyam: 3</li>
+            <li>születési év: 2002</li>
+            <li>szak: programtervező informatikus</li>
+         </ul>
+      </div>
+      <div>
+        <table border="3" bgcolor="#C5E1A5">
+            <tr bgcolor="#9acd32">
+               <th>Kurzus neve (ID)</th>
+               <th>Jóváhagyás</th>
+               <th>Kredit</th>
+               <th>Hely</th>
+               <th>Időpont</th>
+               <th>Oktatók</th>
+            </tr>
+            <tr>
+               <td>Idegennyelv I. (01)</td>
+               <td>igen</td>
+               <td>0</td>
+               <td>A/5 202</td>
+               <td>Hétfő, 12-14</td>
+               <td>Pásztor Krisztina</td>
+            </tr>
+            <tr>
+               <td>WEB technológiák (02)</td>
+               <td>igen</td>
+               <td>5</td>
+               <td>30-as előadó</td>
+               <td>Hétfő, 14-16</td>
+               <td>Agardi Anita</td>
+            </tr>
+            <tr>
+               <td>WEB technológiák (03)</td>
+               <td>igen</td>
+               <td>5</td>
+               <td>Inf/202</td>
+               <td>Hétfő, 16-18</td>
+               <td>Agardi Anita</td>
+            </tr>
+            <tr>
+               <td>Mesterséges intelligencia (04)</td>
+               <td>nem</td>
+               <td>5</td>
+               <td>32-es előadó</td>
+               <td>Kedd, 10-12</td>
+               <td>Fazekas Levente</td>
+            </tr>
+            <tr>
+               <td>Adatkezelés XML-ben (05)</td>
+               <td>igen</td>
+               <td>5</td>
+               <td>32-es előadó</td>
+               <td>Kedd, 12-14</td>
+               <td>Bednarik László</td>
+            </tr>
+            <tr>
+               <td>Algoritmusok és vizsgálatuk (06)</td>
+               <td>igen</td>
+               <td>5</td>
+               <td>A/1 320</td>
+               <td>Kedd, 14-18</td>
+               <td>Házy Attila</td>
+            </tr>
+            <tr>
+               <td>Számítógépi hálózatok (07)</td>
+               <td>igen</td>
+               <td>5</td>
+               <td>12-es előadó</td>
+               <td>Szerda, 8-10</td>
+               <td>Kovács Szilveszter</td>
+            </tr>
+            <tr>
+               <td>Adatkezelés XML-ben (08)</td>
+               <td>igen</td>
+               <td>5</td>
+               <td>Inf/101</td>
+               <td>Szerda, 12-14</td>
+               <td>Bednarik László</td>
+            </tr>
+            <tr>
+               <td>Vállalati információs rendszerek (09)</td>
+               <td>igen</td>
+               <td>5</td>
+               <td>Inf/101</td>
+               <td>Szerda, 14-16</td>
+               <td>Sasvári Péter</td>
+            </tr>
+            <tr>
+               <td>Vállalati információs rendszerek (10)</td>
+               <td>igen</td>
+               <td>5</td>
+               <td>Inf/103</td>
+               <td>Szerda, 18-20</td>
+               <td>Sasvári Péter</td>
+            </tr>
+            <tr>
+               <td>Mesterséges intelligencia (11)</td>
+               <td>igen</td>
+               <td>5</td>
+               <td>1-es előadó</td>
+               <td>Csütörtök, 10-12</td>
+               <td>Fazekas Levente</td>
+            </tr>
+            <tr>
+               <td>Számítógépi hálózatok (12)</td>
+               <td>igen</td>
+               <td>5</td>
+               <td>3-as előadó</td>
+               <td>Csütörtök, 12-14</td>
+               <td>Kovács Szilveszter</td>
+            </tr>
+            <tr>
+               <td>Játék prototípusok (13)</td>
+               <td>igen</td>
+               <td>5</td>
+               <td>Inf/15</td>
+               <td>Csütörtök, 16-20</td>
+               <td>Kiss Áron</td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>
