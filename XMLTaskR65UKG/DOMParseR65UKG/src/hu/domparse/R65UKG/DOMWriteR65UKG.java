@@ -88,8 +88,9 @@ public class DOMWriteR65UKG {
         //Lementjük a dokumentumot
         try{
             //file = new FileWriter("XMLR65UKG1.xml",StandardCharsets.UTF_8);
-            file = new FileWriter("XMLR65UKG1.xml");
+            file = new FileWriter("XMLR65UKG2.xml");
             listData(document.getChildNodes(), separation);
+            listData2(document.getChildNodes(), separation);
             file.close();
         }
         catch(IOException e){
@@ -223,6 +224,50 @@ public class DOMWriteR65UKG {
                     }
                     else{
                         file.write("</" + node.getNodeName() + ">\n");
+                    }
+                }
+                
+            }
+        }
+    }
+    public static void listData2(NodeList nodeList, String separation){
+        separation += "\t";
+        boolean text = false;
+
+        if(nodeList!=null){
+            for(int i=0; i<nodeList.getLength(); i++){
+                Node node = nodeList.item(i);
+                text=false;
+                if(node.getNodeType()==Node.ELEMENT_NODE && ((!node.getTextContent().trim().isEmpty() && node.getNodeValue()!="#text") || node.hasAttributes())){
+                    System.out.println();
+                    System.out.print(separation + "< " + node.getNodeName());
+                    NamedNodeMap attribute = node.getAttributes();
+                    for(int j=0; j<attribute.getLength(); j++){
+                        System.out.print(" " +attribute.item(j));
+                    }
+                    System.out.print(" > ");
+                    NodeList newNodeList = node.getChildNodes();
+                    listData2(newNodeList, separation);
+                    if(newNodeList.item(0) instanceof Text){
+                        text=true;
+                    }
+                }
+                else if(node instanceof Text){
+                    text = true;
+                    String value = node.getNodeValue().trim();
+                    if(value.isEmpty()){
+                        continue;
+                    }
+                    System.out.print(node.getTextContent());
+                    
+                }
+                if(node.getNodeType()==Node.ELEMENT_NODE && ((!node.getTextContent().trim().isEmpty() && node.getNodeValue()!="#text") || node.hasAttributes())){
+                    if(!text){
+                        System.out.println();
+                        System.out.println(separation + "</ " + node.getNodeName()+">");
+                    }
+                    else{
+                        System.out.println("</" + node.getNodeName() + ">");
                     }
                 }
                 

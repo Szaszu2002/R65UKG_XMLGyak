@@ -1,0 +1,98 @@
+
+ 	<R65UKG_Teremfoglalas> 
+ 		<Tárgyak Taid="01"> 
+ 			<Név> Idegen nyelv 1.</Név>
+
+ 			<Tárgykód> MIGENANNY1</Tárgykód>
+
+ 			<Típus> elmélet</Típus>
+
+ 			<Idõtartam> 2</Idõtartam>
+
+ 			<Kezdet> Hétfõ 12</Kezdet>
+
+ 		</Tárgyak>
+
+ 		<Tárgyak Taid="02"> 
+ 			<Név> WEB technológiák</Név>
+
+ 			<Tárgykód> GEIAL331-B</Tárgykód>
+
+ 			<Típus> elmélet és gyakorlat</Típus>
+
+ 			<Idõtartam> 2</Idõtartam>
+
+ 			<Kezdet> Hétfõ 14</Kezdet>
+
+ 			<Kezdet> Hétfõ 16</Kezdet>
+
+ 		</Tárgyak>
+
+ 		<Tárgyak Taid="03"> 
+ 			<Név> Mesterséges intelligencia alapok</Név>
+
+ 			<Tárgykód> GEIAK130-B</Tárgykód>
+
+ 			<Típus> elmélet és gyakorlat</Típus>
+
+ 			<Idõtartam> 2</Idõtartam>
+
+ 			<Kezdet> Kedd 10</Kezdet>
+
+ 		</Tárgyak>
+
+ 		<Teremfoglalás REF_Taid="08" REF_Tid="11"> 
+ 			<Mikor_van_lefoglalva> Csütörtök 16</Mikor_van_lefoglalva>
+
+ 			<Milyen_tárgyra> Játék prototípusok</Milyen_tárgyra>
+
+ 		</Teremfoglalás>
+
+ 		<Teremfoglalás REF_Taid="07" REF_Tid="08"> 
+ 			<Mikor_van_lefoglalva> Szerda 18</Mikor_van_lefoglalva>
+
+ 			<Milyen_tárgyra> Vállalati információs rendszerek</Milyen_tárgyra>
+
+ 		</Teremfoglalás>
+
+ 		<Teremfoglalás REF_Taid="07" REF_Tid="07"> 
+ 			<Mikor_van_lefoglalva> Szerda 14</Mikor_van_lefoglalva>
+
+ 			<Milyen_tárgyra> Vállalati információs rendszerek</Milyen_tárgyra>
+
+ 		</Teremfoglalás>
+
+ 		<Terem Tid="01"> 
+ 			<Férõhely> 28</Férõhely>
+
+ 			<Vetitõ_állapota> Nincs</Vetitõ_állapota>
+
+ 			<Állapot> -</Állapot>
+
+ 			<Teremszám> A5/202</Teremszám>
+
+ 		</Terem>
+
+ 		<Terem Tid="02"> 
+ 			<Férõhely> 100</Férõhely>
+
+ 			<Vetitõ_állapota> Nincs</Vetitõ_állapota>
+
+ 			<Állapot> -</Állapot>
+
+ 			<Teremszám> 30-as elõadó</Teremszám>
+
+ 		</Terem>
+
+ 		<Terem Tid="03"> 
+ 			<Férõhely> -</Férõhely>
+
+ 			<Vetitõ_állapota> Van</Vetitõ_állapota>
+
+ 			<Állapot> -</Állapot>
+
+ 			<Teremszám> Inf/202</Teremszám>
+
+ 		</Terem>
+
+ 	</R65UKG_Teremfoglalas>
