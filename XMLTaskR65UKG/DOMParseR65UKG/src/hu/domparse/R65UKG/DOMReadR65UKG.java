@@ -30,7 +30,7 @@ public class DOMReadR65UKG {
             System.out.println("Document is null");
             System.exit(-1);
         }
-        
+
         System.out.println("<" + doc.getDocumentElement().getNodeName() + ">");
         NodeList nodeList = doc.getDocumentElement().getChildNodes();
         String separation = "";
@@ -58,6 +58,7 @@ public class DOMReadR65UKG {
         if(nodeList!=null){
             for(int i=0; i<nodeList.getLength(); i++){
                 Node node = nodeList.item(i);
+                text=false;
                 if(node.getNodeType()==Node.ELEMENT_NODE && ((!node.getTextContent().trim().isEmpty() && node.getNodeValue()!="#text") || node.hasAttributes())){
                     System.out.println();
                     System.out.print(separation + "< " + node.getNodeName());
@@ -68,6 +69,9 @@ public class DOMReadR65UKG {
                     System.out.print(" > ");
                     NodeList newNodeList = node.getChildNodes();
                     listData(newNodeList, separation);
+                    if(newNodeList.item(0) instanceof Text){
+                        text=true;
+                    }
                 }
                 else if(node instanceof Text){
                     text = true;
@@ -81,7 +85,7 @@ public class DOMReadR65UKG {
                 if(node.getNodeType()==Node.ELEMENT_NODE && ((!node.getTextContent().trim().isEmpty() && node.getNodeValue()!="#text") || node.hasAttributes())){
                     if(!text){
                         System.out.println();
-                        System.out.println(separation + "</ " + node.getNodeName());
+                        System.out.println(separation + "</ " + node.getNodeName()+">");
                     }
                     else{
                         System.out.println("</" + node.getNodeName() + ">");

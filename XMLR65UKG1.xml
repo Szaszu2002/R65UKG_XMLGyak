@@ -1,501 +1,98 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<R65UKG_Teremfoglalás xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaR65UKG.xsd">
-    <!--Tárgyak tábla adatai-->
-    <Tárgyak Taid="01">
-        <Név>Idegen nyelv 1.</Név>
-        <Tárgykód>MIGENANNY1</Tárgykód>
-        <Típus>elmélet</Típus> 
-        <Időtartam>2</Időtartam> 
-        <Kezdet>Hétfő 12</Kezdet>
-    </Tárgyak>
-    <Tárgyak Taid="02">
-        <Név>WEB technológiák</Név>
-        <Tárgykód>GEIAL331-B</Tárgykód>
-        <Típus>elmélet és gyakorlat</Típus> 
-        <Időtartam>2</Időtartam> 
-        <Kezdet>Hétfő 12</Kezdet>
-        <Kezdet>Hétfő 14</Kezdet>
-    </Tárgyak>
-    <Tárgyak Taid="03">
-        <Név>Mesterséges intelligencia alapok</Név>
-        <Tárgykód>GEIAK130-B</Tárgykód>
-        <Típus>elmélet és gyakorlat</Típus> 
-        <Időtartam>2</Időtartam> 
-        <Kezdet>Kedd 10</Kezdet>
-        <Kezdet>Csütörtök 10</Kezdet>
-    </Tárgyak>
-    <Tárgyak Taid="04">
-        <Név>Adatkezelés XML-ben</Név>
-        <Tárgykód>GEIAL332-B</Tárgykód>
-        <Típus>elmélet és gyakorlat</Típus> 
-        <Időtartam>2</Időtartam> 
-        <Kezdet>Kedd 12</Kezdet>
-        <Kezdet>Szerda 12</Kezdet>
-    </Tárgyak>
-    <Tárgyak Taid="05">
-        <Név>Algoritmusok és vizsgálatuk</Név>
-        <Tárgykód>GEIAK234-B</Tárgykód>
-        <Típus>elmélet</Típus> 
-        <Időtartam>4</Időtartam> 
-        <Kezdet>Kedd 14</Kezdet>
-    </Tárgyak>
-    <Tárgyak Taid="06">
-        <Név>Számítógépi hálózatok</Név>
-        <Tárgykód>GEIAL304-B</Tárgykód>
-        <Típus>elmélet</Típus> 
-        <Időtartam>2</Időtartam> 
-        <Kezdet>Szerda 8</Kezdet>
-        <Kezdet>Csütörtök 12</Kezdet>
-    </Tárgyak>
-    <Tárgyak Taid="07">
-        <Név>Vállalati információs rendszerek fejlesztése</Név>
-        <Tárgykód>GEIAL315-B</Tárgykód>
-        <Típus>elmélet</Típus> 
-        <Időtartam>2</Időtartam> 
-        <Kezdet>Szerda 14</Kezdet>
-        <Kezdet>Szerda 18</Kezdet>
-    </Tárgyak>
-    <Tárgyak Taid="08">
-        <Név>Játék prototípusok</Név>
-        <Tárgykód>GEIAK310-B</Tárgykód>
-        <Típus>gyakorlat</Típus> 
-        <Időtartam>4</Időtartam> 
-        <Kezdet>Csütörtök 16</Kezdet>
-    </Tárgyak>
 
-    <!--Teremfoglalás tábla adatai-->
-    <Teremfoglalás REF_Taid="08" REF_Tid="11">
-        <Mikor_van_lefoglalva>Csütörtök 16</Mikor_van_lefoglalva>
-        <Milyen_tárgyra>Játék prototípusok</Milyen_tárgyra>
-    </Teremfoglalás>
-    <Teremfoglalás REF_Taid="07" REF_Tid="08">
-        <Mikor_van_lefoglalva>Szerda 18</Mikor_van_lefoglalva>
-        <Milyen_tárgyra>Vállalati információs rendszerek</Milyen_tárgyra>
-    </Teremfoglalás>
-    <Teremfoglalás REF_Taid="07" REF_Tid="07">
-        <Mikor_van_lefoglalva>Szerda 14</Mikor_van_lefoglalva>
-        <Milyen_tárgyra>Vállalati információs rendszerek</Milyen_tárgyra>
-    </Teremfoglalás>
-    <Teremfoglalás REF_Taid="06" REF_Tid="10">
-        <Mikor_van_lefoglalva>Csütörtök 12</Mikor_van_lefoglalva>
-        <Milyen_tárgyra>Számitógépi hálózatok</Milyen_tárgyra>
-    </Teremfoglalás>
-    <Teremfoglalás REF_Taid="06" REF_Tid="06">
-        <Mikor_van_lefoglalva>Szerda 8</Mikor_van_lefoglalva>
-        <Milyen_tárgyra>Számitógépi hálózatok</Milyen_tárgyra>
-    </Teremfoglalás>
-    <Teremfoglalás REF_Taid="05" REF_Tid="05">
-        <Mikor_van_lefoglalva>Kedd 14 </Mikor_van_lefoglalva>
-        <Milyen_tárgyra>Algoritmusok és vizsgálatuk</Milyen_tárgyra>
-    </Teremfoglalás>
-    <Teremfoglalás REF_Taid="04" REF_Tid="04">
-        <Mikor_van_lefoglalva>Kedd 12</Mikor_van_lefoglalva>
-        <Milyen_tárgyra>Adatkezelés XML-ben</Milyen_tárgyra>
-    </Teremfoglalás>
-    <Teremfoglalás REF_Taid="04" REF_Tid="07">
-        <Mikor_van_lefoglalva>Szerda 12</Mikor_van_lefoglalva>
-        <Milyen_tárgyra>Adatkezelés XML-ben</Milyen_tárgyra>
-    </Teremfoglalás>
-    <Teremfoglalás REF_Taid="03" REF_Tid="04">
-        <Mikor_van_lefoglalva>Kedd 10</Mikor_van_lefoglalva>
-        <Milyen_tárgyra>Mesterséges intelligencia alapok</Milyen_tárgyra>
-    </Teremfoglalás>
-    <Teremfoglalás REF_Taid="03" REF_Tid="09">
-        <Mikor_van_lefoglalva>Csütörtök 10</Mikor_van_lefoglalva>
-        <Milyen_tárgyra>Mesterséges intelligencia alapok</Milyen_tárgyra>
-    </Teremfoglalás>
-    <Teremfoglalás REF_Taid="02" REF_Tid="03">
-        <Mikor_van_lefoglalva>Hétfő 16</Mikor_van_lefoglalva>
-        <Milyen_tárgyra>WEB technológiák</Milyen_tárgyra>
-    </Teremfoglalás>
-    <Teremfoglalás REF_Taid="02" REF_Tid="02">
-        <Mikor_van_lefoglalva>Hétfő 14</Mikor_van_lefoglalva>
-        <Milyen_tárgyra>WEB technológiák</Milyen_tárgyra>
-    </Teremfoglalás>
-    <Teremfoglalás REF_Taid="01" REF_Tid="01">
-        <REF_Taid>01</REF_Taid>
-        <REF_Tid>01</REF_Tid>
-        <Mikor_van_lefoglalva>Hétfő 12</Mikor_van_lefoglalva>
-        <Milyen_tárgyra>Idegen nyelv 1.</Milyen_tárgyra>
-    </Teremfoglalás>
+ 	<R65UKG_Teremfoglalas> 
+ 		<T�rgyak Taid="01"> 
+ 			<N�v> Idegen nyelv 1.</N�v>
 
-    <!--Terem tábla adatai-->
-    <Terem Tid="01">
-        <Férőhely>28</Férőhely>
-        <Vetítő_állapota>Nincs</Vetítő_állapota> 
-        <Állapot/>
-        <Teremszám>A5/202</Teremszám>
-    </Terem>
-    <Terem Tid="02">
-        <Férőhely>100</Férőhely>
-        <Vetítő_állapota>Nincs</Vetítő_állapota> 
-        <Állapot/>
-        <Teremszám>30-as előadó</Teremszám>
-    </Terem>
-    <Terem Tid="03">
-        <Férőhely>-</Férőhely>
-        <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot/>
-        <Teremszám>Inf/202</Teremszám>
-    </Terem>
-    <Terem Tid="04">
-        <Férőhely>300</Férőhely>
-        <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot/>
-        <Teremszám>32-es előadó</Teremszám>
-    </Terem>
-    <Terem Tid="05">
-        <Férőhely>54</Férőhely>
-        <Vetítő_állapota>Nincs</Vetítő_állapota> 
-        <Állapot/>
-        <Teremszám>A1/320</Teremszám>
-    </Terem>
-    <Terem Tid="06">
-        <Férőhely>312</Férőhely>
-        <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot/>
-        <Teremszám>2-es előadó</Teremszám>
-    </Terem>
-    <Terem Tid="07">
-        <Férőhely>-</Férőhely>
-        <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot/>
-        <Teremszám>Inf/101</Teremszám>
-    </Terem>
-    <Terem Tid="08">
-        <Férőhely>-</Férőhely>
-        <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot/>
-        <Teremszám>Inf/103</Teremszám>
-    </Terem>
-    <Terem Tid="09">
-        <Férőhely>504</Férőhely>
-        <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot/>
-        <Teremszám>1-es előadó</Teremszám>
-    </Terem>
-    <Terem Tid="10">
-        <Férőhely>384</Férőhely>
-        <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot/>
-        <Teremszám>3-as előadó</Teremszám>
-    </Terem>
-    <Terem Tid="11">
-        <Férőhely>-</Férőhely>
-        <Vetítő_állapota>Van</Vetítő_állapota> 
-        <Állapot/>
-        <Teremszám>Inf/15</Teremszám>
-    </Terem>
+ 			<T�rgyk�d> MIGENANNY1</T�rgyk�d>
 
-    <!--Oktatott tárgyak (kapcsoló tábla) tábla adatai-->
-    <Oktatott_tárgyak REF_Oid="08" REF_Taid="08"/>
-    <Oktatott_tárgyak REF_Oid="07" REF_Taid="07"/>
-    <Oktatott_tárgyak REF_Oid="06" REF_Taid="06"/>
-    <Oktatott_tárgyak REF_Oid="05" REF_Taid="05"/>
-    <Oktatott_tárgyak REF_Oid="04" REF_Taid="04"/>
-    <Oktatott_tárgyak REF_Oid="03" REF_Taid="03"/>
-    <Oktatott_tárgyak REF_Oid="02" REF_Taid="02"/>
-    <Oktatott_tárgyak REF_Oid="01" REF_Taid="01"/>
+ 			<T�pus> elm�let</T�pus>
 
-    <!--Oktatók tábla adatai-->
-    <Oktatók Oid="01">
-        <Név>Pásztor Krisztina</Név> 
-        <Telefonszám>+36 46 565-11/17-71</Telefonszám>  
-        <Szoba>
-            <Épület>A1</Épület>
-            <Emelet>3</Emelet>
-            <Szobaszám>303/a</Szobaszám>
-        </Szoba>
-        <Email_cím>krisztina.pasztor@uni-miskolc.hu</Email_cím>
-    </Oktatók>
-    <Oktatók Oid="02">
-        <Név>Agárdi Anita</Név> 
-        <Telefonszám>17-56</Telefonszám> 
-        <Szoba>
-            <Épület>Informatikai épület</Épület>
-            <Emelet>1</Emelet>
-            <Szobaszám>111</Szobaszám>
-        </Szoba>
-        <Email_cím>anita.agardi@uni-miskolc.hu</Email_cím>
-    </Oktatók>
-    <Oktatók Oid="03">
-        <Név>Fazekas Levente</Név> 
-        <Telefonszám>-</Telefonszám> 
-        <Szoba>
-            <Épület>Informatikai épület</Épület>
-            <Emelet>fsz.</Emelet>
-            <Szobaszám>8/b</Szobaszám>
-        </Szoba>
-        <Email_cím>aitflex@uni-miskolc.hu</Email_cím>
-    </Oktatók>
-     <Oktatók Oid="04">
-        <Név>Bednarik László</Név> 
-        <Telefonszám>17-58</Telefonszám> 
-        <Szoba>
-            <Épület>Informatikai épület</Épület>
-            <Emelet>1</Emelet>
-            <Szobaszám>107/b</Szobaszám>
-        </Szoba>
-        <Email_cím>bednarik.laszlo@iit.uni-miskolc.hu</Email_cím>
-    </Oktatók>
-     <Oktatók Oid="05">
-        <Név>Házy Attila</Név> 
-        <Telefonszám>+36 46 565 111/1890</Telefonszám> 
-        <Telefonszám>+36 30 466 8317</Telefonszám>
-        <Szoba>
-            <Épület>A4</Épület>
-            <Emelet>3</Emelet>
-            <Szobaszám>328</Szobaszám>
-        </Szoba>
-        <Email_cím>matha@uni-miskolc.hu</Email_cím>
-    </Oktatók>
-     <Oktatók Oid="06">
-        <Név>Kovács Szilveszter</Név> 
-        <Telefonszám>+36 46 565 111/2107</Telefonszám> 
-        <Szoba>
-            <Épület>Informatikai épület</Épület>
-            <Emelet>1</Emelet>
-            <Szobaszám>107/a</Szobaszám>
-        </Szoba>
-        <Email_cím>kovacsszilveszter@iit.uni-miskolc.hu</Email_cím>
-    </Oktatók>
-     <Oktatók Oid="07">
-        <Név>Sasvári Péter</Név> 
-        <Telefonszám>+36 46 565 111/2111</Telefonszám> 
-        <Szoba>
-            <Épület>Informatikai épület</Épület>
-            <Emelet>1</Emelet>
-            <Szobaszám>109</Szobaszám>
-        </Szoba>
-        <Email_cím>sasvaripeter@iit.uni-miskolc.hu</Email_cím>
-    </Oktatók>
-     <Oktatók Oid="08">
-        <Név>Kiss Áron</Név> 
-        <Telefonszám>-</Telefonszám> 
-        <Szoba>
-            <Épület>Informatikai épület</Épület>
-            <Emelet>fsz.</Emelet>
-            <Szobaszám>8/b</Szobaszám>
-        </Szoba>
-        <Email_cím>aitkiss@uni-miskolc.hu</Email_cím>
-    </Oktatók>
+ 			<Id�tartam> 2</Id�tartam>
 
-    <!--Foglalkoztatottság (kapcsoló tábla) tábla adatai-->
-    <Foglalkoztatottság REF_Kid="03" REF_Oid="01"/> 
-    <Foglalkoztatottság REF_Kid="03" REF_Oid="02"/> 
-    <Foglalkoztatottság REF_Kid="03" REF_Oid="03"/> 
-    <Foglalkoztatottság REF_Kid="03" REF_Oid="04"/> 
-    <Foglalkoztatottság REF_Kid="03" REF_Oid="05"/> 
-    <Foglalkoztatottság REF_Kid="03" REF_Oid="06"/> 
-    <Foglalkoztatottság REF_Kid="03" REF_Oid="07"/> 
-    <Foglalkoztatottság REF_Kid="03" REF_Oid="08"/> 
+ 			<Kezdet> H�tf� 12</Kezdet>
 
-    <!--Dékán tábla adatai-->
-    <Dékán Did="01" REF_Kid="01">
-        <Név>Prof. Dr. Mucsi Gábor</Név>
-        <Email_cím>rekbdhiv@uni-miskolc.hu</Email_cím>
-        <Szoba>
-            <Épület>A4</Épület>
-            <Emelet>fsz.</Emelet>
-            <Szobaszám>26</Szobaszám>
-        </Szoba>
-        <Telefonszám>+36 46 565 111/1020</Telefonszám>  
-    </Dékán>
-    <Dékán Did="02" REF_Kid="02">
-        <Név>Prof. Dr. Palotás Árpád Bence</Név>
-        <Email_cím>arpad.palotas@uni-miskolc.hu</Email_cím>
-        <Szoba>
-            <Épület>C1</Épület>
-            <Emelet>1</Emelet>
-            <Szobaszám>108</Szobaszám>
-        </Szoba>
-        <Telefonszám>+36 46 565 111/1023</Telefonszám> 
-        <Telefonszám>+36 46 565 111/2011</Telefonszám> 
-    </Dékán>
-    <Dékán Did="03" REF_Kid="03">
-        <Név>Dr. Siménfalvi Zoltán</Név>
-        <Email_cím>gkdh5@uni-miskolc.hu</Email_cím>
-        <Szoba>
-            <Épület>C1</Épület>
-            <Emelet>1</Emelet>
-            <Szobaszám>-</Szobaszám>
-        </Szoba>
-        <Telefonszám>+36 46 565 111/2352</Telefonszám>  
-    </Dékán>
-    <Dékán Did="04" REF_Kid="04">
-        <Név>Prof. Dr. Csák Csilla</Név>
-        <Email_cím>jogdekan@uni-miskolc.hu</Email_cím>
-        <Szoba>
-            <Épület>A6</Épület>
-            <Emelet>fsz.</Emelet>
-            <Szobaszám>4</Szobaszám>
-        </Szoba>
-        <Telefonszám>+36 46 565 111/1350</Telefonszám> 
-        <Telefonszám>+36 46 565 111/2006</Telefonszám>  
-    </Dékán>
-    <Dékán Did="05" REF_Kid="05">
-        <Név>Veresné Dr. Somosi Mariann</Név>
-        <Email_cím>gazddek@uni-miskolc.hu</Email_cím>
-        <Szoba>
-            <Épület>A4</Épület>
-            <Emelet>1</Emelet>
-            <Szobaszám>115</Szobaszám>
-        </Szoba>
-        <Telefonszám>+36 46 565 111/1005</Telefonszám>
-        <Telefonszám>+36 46 565 111/1644</Telefonszám>
-    </Dékán>
-    <Dékán Did="06" REF_Kid="06">
-        <Név>Dr. Illésné Dr. Kovács Mária</Név>
-        <Email_cím>boldek@uni-miskolc.hu</Email_cím>
-        <Szoba>
-            <Épület>A4</Épület>
-            <Emelet>4</Emelet>
-            <Szobaszám>422</Szobaszám>
-        </Szoba>
-        <Telefonszám>+36 46 565 111/1497</Telefonszám>
-    </Dékán>
-    <Dékán Did="07" REF_Kid="07">
-        <Név>Dr. Kiss-Tóth Emőke</Név>
-        <Email_cím>rekefk@uni-miskolc.hu</Email_cím>
-        <Szoba>
-            <Épület>B3/B4</Épület>
-            <Emelet>1</Emelet>
-            <Szobaszám>-</Szobaszám>
-        </Szoba>
-        <Telefonszám>+36 46 366 560</Telefonszám>
-    </Dékán>
-    <Dékán Did="08" REF_Kid="08">
-        <Név>Dr. Papp Sándor</Név>
-        <Email_cím>sandor.papp@uni-miskolc.hu</Email_cím>
-        <Szoba>
-            <Épület>Bartók tér 1. / Zenepalota</Épület>
-            <Emelet>-</Emelet>
-            <Szobaszám>-</Szobaszám>
-        </Szoba>
-        <Telefonszám>+36 46 321 711</Telefonszám>
-    </Dékán>
+ 		</T�rgyak>
 
-    <!--Kar tábla adatai-->
-    <Kar Kid="01">
-        <Név>Műszaki Föld- és Környezettudományi Kar</Név>
-        <Szak>Földrajz</Szak>
-        <Szak>Környezetmérnöki</Szak>
-        <Szak>Műszaki földtudományi</Szak>
-    </Kar>
-    <Kar Kid="02">
-        <Név>Anyag- és Vegyészmérnöki Kar</Név>
-        <Szak>Anyagmérnőki</Szak>
-        <Szak>Vegyészmérnőki</Szak>
-    </Kar>
-    <Kar Kid="03">
-        <Név>Gépészmérnőki és Informatikai Kar</Név>
-        <Szak>Energetikai mérnöki</Szak>
-        <Szak>Gazdaságinformatikus</Szak>
-        <Szak>Gépészmérnőki</Szak>
-        <Szak>Ipari termék- és formatervező mérnőki</Szak>
-        <Szak>Járműmérnöki</Szak>
-        <Szak>Logisztikai mérnöki</Szak>
-        <Szak>Mechatronikai mérnöki</Szak>
-        <Szak>Mérnökinformatikus</Szak>
-        <Szak>Műszaki menedzser</Szak>
-        <Szak>Programtervező informatikus</Szak>
-        <Szak>Üzemmérnök-informatikus</Szak>
-        <Szak>Villamosmérnöki</Szak>
-    </Kar>
-    <Kar Kid="04">
-        <Név>Állam- és Jogtudományi Kar</Név>
-        <Szak>Igazgatásszervező</Szak>
-        <Szak>Igazságügyi igazgatási</Szak>
-        <Szak>Közigazgatás-szervező</Szak>
-        <Szak>Munkaügyi és társadalombiztosítási igazgatási</Szak>
-    </Kar>
-    <Kar Kid="05">
-        <Név>Gazdaságtudományi Kar</Név>
-        <Szak>Emberi erőforrások</Szak>
-        <Szak>Gazdálkodási és menedzsment</Szak>
-        <Szak>Kereskedelem és marketing</Szak>
-        <Szak>Közgazdasági adatelemzés</Szak>
-        <Szak>Nemzetközi gazdálkodás</Szak>
-        <Szak>Pénzügy és számvitel</Szak>
-        <Szak>Sportszervezés</Szak>
-        <Szak>Sport- és rekreációszervezés</Szak>
-        <Szak>Turizmus-vendéglátás</Szak>
-    </Kar>
-    <Kar Kid="06">
-        <Név>Bölcsészet- és Társadalomtudományi Kar</Név>
-        <Szak>Anglisztika</Szak>
-        <Szak>Germanisztika</Szak>
-        <Szak>Gyógypedagógia</Szak>
-        <Szak>Kommunikáció- és médiatudomány</Szak>
-        <Szak>Kulturális antropológia</Szak>
-        <Szak>Magyar</Szak>
-        <Szak>Nemzetközi tanulmányok</Szak>
-        <Szak>Pedagógia</Szak>
-        <Szak>Politológia</Szak>
-        <Szak>Régészet</Szak>
-        <Szak>Szabad bölcsészet</Szak>
-        <Szak>Szociális munka</Szak>
-        <Szak>Szociológia</Szak>
-        <Szak>Történelem</Szak>
-    </Kar>
-    <Kar Kid="07">
-        <Név>Egészségtudományi Kar</Név>
-        <Szak>Ápolás és betegellátás</Szak>
-        <Szak>Egészségügyi gondozás és prevenció</Szak>
-        <Szak>Egészségügyi szervező</Szak>
-        <Szak>Orvosi diagnosztikai analitikus</Szak>
-    </Kar>
-    <Kar Kid="08">
-        <Név>Bartók Béla Zeneművészeti Kar</Név>
-        <Szak>Alkotóművészet és muzikológia</Szak>
-        <Szak>Előadóművészet</Szak>
-    </Kar>
+ 		<T�rgyak Taid="02"> 
+ 			<N�v> WEB technol�gi�k</N�v>
 
-    <!--Hallgatói jogviszony (kapcsoló tábla) tábla adatai-->
-    <Hallgatói_jogviszony REF_Kid="03" REF_Neptunkód="R65UKG"/> 
-    <Hallgatói_jogviszony REF_Kid="03" REF_Neptunkód="ULA7Z2"/> 
-    <Hallgatói_jogviszony REF_Kid="03" REF_Neptunkód="MPW46D"/> 
+ 			<T�rgyk�d> GEIAL331-B</T�rgyk�d>
 
-    <!--Hallgatók tábla adatai-->
-    <Hallgatók Neptunkód="R65UKG">
-        <Név>Szabó Alexandra Marianna</Név>
-        <Email_cím>szaboalexandra2002@freemail.hu</Email_cím>
-        <Email_cím>szaboalexandram18@gmail.com</Email_cím>
-        <Telefonszám>06 30 285 5820</Telefonszám>  
-        <Szak>Programtervező informatikus</Szak>
-    </Hallgatók>
-    <Hallgatók Neptunkód="ULA7Z2">
-        <Név>Keresztes Iulia</Név>
-        <Email_cím>101juliakeresztes@gmail.com</Email_cím>
-        <Telefonszám>-</Telefonszám> 
-        <Szak>Programtervező informatikus</Szak>
-    </Hallgatók>
-    <Hallgatók Neptunkód="MPW46D">
-        <Név>Görög Krisztina Erzsébet</Név>
-        <Email_cím>kgorog989@gmail.com</Email_cím>
-        <Telefonszám>-</Telefonszám> 
-        <Szak>Programtervező informatikus</Szak>
-    </Hallgatók>
+ 			<T�pus> elm�let �s gyakorlat</T�pus>
 
-    <!--Felvett tárgyak (kapcsoló tábla) tábla adatai-->
-    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="01"/>
-    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="02"/>
-    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="03"/>
-    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="04"/>
-    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="05"/>
-    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="06"/>
-    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="07"/>
-    <Felvett_tárgyak REF_Neptunkód="R65UKG" REF_Taid="08"/>
-    <Felvett_tárgyak REF_Neptunkód="ULA7Z2" REF_Taid="01"/>
-    <Felvett_tárgyak REF_Neptunkód="ULA7Z2" REF_Taid="03"/>
-    <Felvett_tárgyak REF_Neptunkód="ULA7Z2" REF_Taid="04"/>
-    <Felvett_tárgyak REF_Neptunkód="ULA7Z2" REF_Taid="05"/>
-    <Felvett_tárgyak REF_Neptunkód="ULA7Z2" REF_Taid="07"/>
-    <Felvett_tárgyak REF_Neptunkód="ULA7Z2" REF_Taid="08"/>
-    <Felvett_tárgyak REF_Neptunkód="MPW46D" REF_Taid="02"/>
-    <Felvett_tárgyak REF_Neptunkód="MPW46D" REF_Taid="03"/>
-    <Felvett_tárgyak REF_Neptunkód="MPW46D" REF_Taid="04"/>
-    <Felvett_tárgyak REF_Neptunkód="MPW46D" REF_Taid="05"/>
-    <Felvett_tárgyak REF_Neptunkód="MPW46D" REF_Taid="07"/>
-    
-</R65UKG_Teremfoglalás>
+ 			<Id�tartam> 2</Id�tartam>
+
+ 			<Kezdet> H�tf� 14</Kezdet>
+
+ 			<Kezdet> H�tf� 16</Kezdet>
+
+ 		</T�rgyak>
+
+ 		<T�rgyak Taid="03"> 
+ 			<N�v> Mesters�ges intelligencia alapok</N�v>
+
+ 			<T�rgyk�d> GEIAK130-B</T�rgyk�d>
+
+ 			<T�pus> elm�let �s gyakorlat</T�pus>
+
+ 			<Id�tartam> 2</Id�tartam>
+
+ 			<Kezdet> Kedd 10</Kezdet>
+
+ 		</T�rgyak>
+
+ 		<Teremfoglal�s REF_Taid="08" REF_Tid="11"> 
+ 			<Mikor_van_lefoglalva> Cs�t�rt�k 16</Mikor_van_lefoglalva>
+
+ 			<Milyen_t�rgyra> J�t�k protot�pusok</Milyen_t�rgyra>
+
+ 		</Teremfoglal�s>
+
+ 		<Teremfoglal�s REF_Taid="07" REF_Tid="08"> 
+ 			<Mikor_van_lefoglalva> Szerda 18</Mikor_van_lefoglalva>
+
+ 			<Milyen_t�rgyra> V�llalati inform�ci�s rendszerek</Milyen_t�rgyra>
+
+ 		</Teremfoglal�s>
+
+ 		<Teremfoglal�s REF_Taid="07" REF_Tid="07"> 
+ 			<Mikor_van_lefoglalva> Szerda 14</Mikor_van_lefoglalva>
+
+ 			<Milyen_t�rgyra> V�llalati inform�ci�s rendszerek</Milyen_t�rgyra>
+
+ 		</Teremfoglal�s>
+
+ 		<Terem Tid="01"> 
+ 			<F�r�hely> 28</F�r�hely>
+
+ 			<Vetit�_�llapota> Nincs</Vetit�_�llapota>
+
+ 			<�llapot> -</�llapot>
+
+ 			<Teremsz�m> A5/202</Teremsz�m>
+
+ 		</Terem>
+
+ 		<Terem Tid="02"> 
+ 			<F�r�hely> 100</F�r�hely>
+
+ 			<Vetit�_�llapota> Nincs</Vetit�_�llapota>
+
+ 			<�llapot> -</�llapot>
+
+ 			<Teremsz�m> 30-as el�ad�</Teremsz�m>
+
+ 		</Terem>
+
+ 		<Terem Tid="03"> 
+ 			<F�r�hely> -</F�r�hely>
+
+ 			<Vetit�_�llapota> Van</Vetit�_�llapota>
+
+ 			<�llapot> -</�llapot>
+
+ 			<Teremsz�m> Inf/202</Teremsz�m>
+
+ 		</Terem>
+
+ 	</R65UKG_Teremfoglalas>

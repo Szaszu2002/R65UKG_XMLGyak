@@ -14,8 +14,8 @@
         <Tárgykód>GEIAL331-B</Tárgykód>
         <Típus>elmélet és gyakorlat</Típus> 
         <Időtartam>2</Időtartam> 
-        <Kezdet>Hétfő 12</Kezdet>
         <Kezdet>Hétfő 14</Kezdet>
+        <Kezdet>Hétfő 16</Kezdet>
     </Tárgyak>
     <Tárgyak Taid="03">
         <Név>Mesterséges intelligencia alapok</Név>
